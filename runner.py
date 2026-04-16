@@ -3,6 +3,11 @@ import sys
 import logging
 import os
 from datetime import datetime
+
+# Fix Windows console encoding for emoji/unicode characters
+sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
 from dotenv import load_dotenv
 load_dotenv()
 
@@ -24,6 +29,7 @@ logging.basicConfig(
         logging.FileHandler(log_file, encoding="utf-8"),
         logging.StreamHandler(sys.stdout),
     ],
+    force=True,
 )
 logger = logging.getLogger("recruitment_agent")
 

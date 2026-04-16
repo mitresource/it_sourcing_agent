@@ -6,7 +6,7 @@ from typing import List, Optional
 
 from firecrawl import Firecrawl
 from pydantic import BaseModel, Field
-from openai import OpenAI
+from main import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv()

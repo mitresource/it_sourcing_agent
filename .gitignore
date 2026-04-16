@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 .venv/
 .claude/
+agent_resume_results/

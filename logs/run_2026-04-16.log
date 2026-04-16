@@ -1,0 +1,89 @@
+2026-04-16 16:24:12,684 [INFO] Starting autonomous recruitment process...
+2026-04-16 16:24:16,755 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:19,893 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:23,424 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:26,948 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:30,026 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:33,328 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:38,640 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:40,788 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:42,864 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:45,426 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:24:45,669 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-16 16:24:46,785 [INFO] ========== RUN COMPLETED ==========
+2026-04-16 16:24:46,785 [INFO] Run ID: 0020ec6b-04c6-4e01-a342-fa434c2e7572
+2026-04-16 16:24:46,785 [INFO] Total Jobs Found: 2
+2026-04-16 16:24:46,792 [INFO] Jobs Processed: 2
+2026-04-16 16:24:46,792 [INFO] Processed Job IDs: ['69ddea63beeb18af9b92d405', '69dcd22e70297a2739b366b1']
+2026-04-16 16:24:46,794 [INFO] Total: 10 candidate evaluations across all jobs, 1 shortlisted
+2026-04-16 16:24:46,794 [INFO] Results saved to: agent_resume_results/
+2026-04-16 16:24:46,794 [WARNING] Email notification: NOT SENT (check AWS SES credentials)
+2026-04-16 16:29:08,159 [INFO] Starting autonomous recruitment process...
+2026-04-16 16:29:08,166 [ERROR] Error during recruitment process: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+Traceback (most recent call last):
+  File "c:\Users\MIT\us_it_agents\it_sourcing_agent\runner.py", line 37, in run_daily_recruitment_process
+    result = await recruitment_app.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\AppData\Local\Programs\Python\Python311\Lib\site-packages\langgraph\pregel\main.py", line 3161, in ainvoke
+    async for chunk in self.astream(
+  File "C:\Users\MIT\AppData\Local\Programs\Python\Python311\Lib\site-packages\langgraph\pregel\main.py", line 2974, in astream
+    async for _ in runner.atick(
+  File "C:\Users\MIT\AppData\Local\Programs\Python\Python311\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "C:\Users\MIT\AppData\Local\Programs\Python\Python311\Lib\site-packages\langgraph\pregel\_retry.py", line 138, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\AppData\Local\Programs\Python\Python311\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\AppData\Local\Programs\Python\Python311\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\MIT\us_it_agents\it_sourcing_agent\agents\nodes\fetch_jobs.py", line 16, in fetch_pending_jobs_from_db
+    print("🔍 Fetching pending jobs from database...")   # ← Added for debugging
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\AppData\Local\Programs\Python\Python311\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f50d' in position 0: character maps to <undefined>
+During task with name 'fetch_pending_jobs_from_db' and id '48ec00e5-f9d7-7946-3c8c-b3392cd14264'
+2026-04-16 16:29:39,314 [INFO] Starting autonomous recruitment process...
+2026-04-16 16:29:43,387 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:29:46,454 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:29:49,226 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:29:51,977 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:29:55,043 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:29:58,435 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:30:01,261 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:30:04,361 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:30:07,644 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:30:10,729 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:30:10,874 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-16 16:30:11,305 [INFO] ========== RUN COMPLETED ==========
+2026-04-16 16:30:11,305 [INFO] Run ID: 80062aa8-7ba5-4af6-bec2-580f61c6cc87
+2026-04-16 16:30:11,305 [INFO] Total Jobs Found: 2
+2026-04-16 16:30:11,305 [INFO] Jobs Processed: 2
+2026-04-16 16:30:11,305 [INFO] Processed Job IDs: ['69dcd21870297a2739b366b0', '69dcd1fb70297a2739b366af']
+2026-04-16 16:30:11,305 [INFO] Total: 10 candidate evaluations across all jobs, 1 shortlisted
+2026-04-16 16:30:11,305 [INFO] Results saved to: agent_resume_results/
+2026-04-16 16:30:11,305 [WARNING] Email notification: NOT SENT (check AWS SES credentials)
+2026-04-16 16:36:28,382 [INFO] Starting autonomous recruitment process...
+2026-04-16 16:36:32,885 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:36:35,699 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:36:38,986 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:36:42,093 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:36:45,781 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:36:48,545 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:36:51,626 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:36:54,268 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:36:58,418 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:37:01,132 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-16 16:37:01,359 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-16 16:37:02,120 [INFO] ========== RUN COMPLETED ==========
+2026-04-16 16:37:02,120 [INFO] Run ID: 084ca8e4-208a-4d92-b6f1-c896f8751b3f
+2026-04-16 16:37:02,120 [INFO] Total Jobs Found: 2
+2026-04-16 16:37:02,120 [INFO] Jobs Processed: 2
+2026-04-16 16:37:02,120 [INFO] Processed Job IDs: ['69ddea63beeb18af9b92d405', '69dcd22e70297a2739b366b1']
+2026-04-16 16:37:02,120 [INFO] Total: 10 candidate evaluations across all jobs, 1 shortlisted
+2026-04-16 16:37:02,120 [INFO] Results saved to: agent_resume_results/
+2026-04-16 16:37:02,130 [INFO] Email notification: SENT

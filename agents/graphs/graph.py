@@ -22,6 +22,7 @@ def has_more_jobs(state):
 def build_recruitment_graph():
     workflow = StateGraph(RecruitmentState)
 
+
     workflow.add_node("fetch_pending_jobs_from_db", fetch_pending_jobs_from_db)
     workflow.add_node("prepare_job_data", prepare_job_data)
     workflow.add_node("evaluate_candidate_matches", evaluate_candidate_matches)

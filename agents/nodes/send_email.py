@@ -123,8 +123,13 @@ async def send_summary_email(state: Dict[str, Any]) -> Dict[str, Any]:
         return {"email_sent": True}
 
     except ClientError as e:
-        print(f"⚠️ SES email failed: {e.response['Error']['Message']}")
+        error_code = e.response['Error']['Code']
+        error_msg = e.response['Error']['Message']
+        print(f"⚠️ SES email failed [{error_code}]: {error_msg}")
+        print(f"   Sender: {sender}")
+        print(f"   Recipients: {recipients}")
+        print(f"   Region: {region}")
         return {"email_sent": False}
     except Exception as e:
-        print(f"⚠️ Email sending failed: {e}")
+        print(f"⚠️ Email sending failed: {type(e).__name__}: {e}")
         return {"email_sent": False}

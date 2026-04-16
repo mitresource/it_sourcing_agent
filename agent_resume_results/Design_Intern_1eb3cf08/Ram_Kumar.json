@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Ram Kumar",
+  "candidate_id": "681c36316ddf8c2fb1a15a6e",
+  "match_score": 25,
+  "shortlisted": false,
+  "reasoning": "The candidate lacks the specific design skills and experience required for the Design Intern position, such as proficiency in Adobe Creative Cloud, CAD software, and visualization skills. While they have a background in web development, it does not align with the responsibilities of creating visual media and prototypes as outlined in the job description.",
+  "key_strengths": [
+    "Web development skills",
+    "Basic programming knowledge",
+    "Training experience in core languages"
+  ],
+  "key_gaps": [
+    "Lack of design skills",
+    "No experience with Adobe Creative Cloud or CAD software",
+    "No relevant internship or project experience in design"
+  ],
+  "job_title": "Design Intern",
+  "company": "",
+  "job_id": "1eb3cf08-5bc7-4ee9-8f53-7600ee46c77b",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

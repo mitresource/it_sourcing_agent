@@ -1,0 +1,21 @@
+{
+  "candidate_name": "PAGOLU JAGADISH",
+  "candidate_id": "683a96665306a786e5ba0ad5",
+  "match_score": 25,
+  "shortlisted": false,
+  "reasoning": "The candidate has a strong background in machine learning and AI, but lacks the specific skills and experience required for the Senior IT Business Analyst role, such as Azure DevOps, SQL, HTML, XML, JSON, and CSS. Additionally, the candidate's experience does not align with the responsibilities of defining business and technical requirements or collaborating with technical teams for software development coordination.",
+  "key_strengths": [
+    "Machine learning expertise",
+    "Experience in AI and natural language processing",
+    "Strong data analysis skills"
+  ],
+  "key_gaps": [
+    "Lack of experience with Azure DevOps",
+    "No knowledge of SQL, HTML, XML, JSON, or CSS",
+    "Limited experience in business analysis and software development lifecycle"
+  ],
+  "job_title": "Senior It Business Analyst",
+  "company": "",
+  "job_id": "b5e273a6-59fd-4de7-9e04-4c7eafc22a3f",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

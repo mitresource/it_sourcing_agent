@@ -1,0 +1,21 @@
+{
+  "candidate_name": "PAGOLU JAGADISH",
+  "candidate_id": "683a96665306a786e5ba0ad5",
+  "match_score": 25,
+  "shortlisted": false,
+  "reasoning": "The candidate has a strong technical background in machine learning and AI, but lacks relevant experience in hotel management systems and the specific responsibilities outlined in the job description. The required skills such as system configuration and hotel content management are not present in the candidate's profile, leading to a low match score.",
+  "key_strengths": [
+    "Machine Learning Expertise",
+    "Data Analysis Skills",
+    "Cross-Functional Collaboration"
+  ],
+  "key_gaps": [
+    "Experience with Hotel Management Systems",
+    "System Configuration Skills",
+    "Knowledge of Rate Loading and Content Management"
+  ],
+  "job_title": "Commercial Systems Intern",
+  "company": "",
+  "job_id": "1491190f-2f9d-48a2-aa61-bc484fba86bc",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

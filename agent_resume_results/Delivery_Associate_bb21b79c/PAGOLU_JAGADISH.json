@@ -1,0 +1,23 @@
+{
+  "candidate_name": "PAGOLU JAGADISH",
+  "candidate_id": "683a96665306a786e5ba0ad5",
+  "match_score": 10,
+  "shortlisted": false,
+  "reasoning": "The candidate has a strong background in machine learning and AI, but lacks the relevant experience and skills required for the Delivery Associate position. Key responsibilities such as package delivery, customer service, and physical stamina are not addressed in their resume.",
+  "key_strengths": [
+    "Machine Learning expertise",
+    "Experience with AI/ML models",
+    "Data analysis skills"
+  ],
+  "key_gaps": [
+    "Driver's License",
+    "Customer Service experience",
+    "GPS Navigation skills",
+    "Time Management in a delivery context",
+    "Physical Stamina for lifting packages"
+  ],
+  "job_title": "Delivery Associate",
+  "company": "",
+  "job_id": "bb21b79c-71ca-423c-ac3f-c20a9268cc69",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Naveen Anantha",
+  "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+  "match_score": 20,
+  "shortlisted": false,
+  "reasoning": "The candidate's background is primarily in full stack development, which does not align with the design-focused requirements of the Design Intern position. While they possess technical skills, they lack the necessary design skills and experience with tools like Adobe Creative Cloud and CAD software, which are critical for this role.",
+  "key_strengths": [
+    "Strong technical skills in web development",
+    "Experience with frontend and backend technologies",
+    "Good educational background in Computer Science"
+  ],
+  "key_gaps": [
+    "Lack of design skills and experience",
+    "No experience with Adobe Creative Cloud or CAD software",
+    "No relevant experience in visualization or prototyping"
+  ],
+  "job_title": "Design Intern",
+  "company": "",
+  "job_id": "1eb3cf08-5bc7-4ee9-8f53-7600ee46c77b",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Ashok Palla",
+  "candidate_id": "681456f8767bd54e6f49b290",
+  "match_score": 55,
+  "shortlisted": true,
+  "reasoning": "The candidate has relevant experience in software development and has worked with technologies like HTML and CSS, which are required for the role. However, they lack direct experience with Azure DevOps, SQL, and specific business analysis responsibilities outlined in the job description, which affects their overall fit.",
+  "key_strengths": [
+    "Strong background in software development",
+    "Proficient in front-end technologies (HTML, CSS)",
+    "Advanced communication skills"
+  ],
+  "key_gaps": [
+    "No experience with Azure DevOps",
+    "Limited exposure to SQL",
+    "Lacks specific business analysis experience"
+  ],
+  "job_title": "Senior It Business Analyst",
+  "company": "",
+  "job_id": "b5e273a6-59fd-4de7-9e04-4c7eafc22a3f",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

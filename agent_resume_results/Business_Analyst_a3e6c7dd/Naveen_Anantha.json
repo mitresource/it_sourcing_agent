@@ -1,0 +1,22 @@
+{
+  "candidate_name": "Naveen Anantha",
+  "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+  "match_score": 20,
+  "shortlisted": false,
+  "reasoning": "The candidate lacks the necessary skills and experience relevant to the Business Analyst role, such as analytical skills, banking knowledge, and experience with compliance and data analysis. Their background is primarily in full stack development, which does not align with the responsibilities outlined in the job description.",
+  "key_strengths": [
+    "Frontend and Backend development skills",
+    "Experience with real-time projects",
+    "Strong educational background in Computer Science"
+  ],
+  "key_gaps": [
+    "Analytical skills",
+    "Banking knowledge",
+    "Communication skills",
+    "Experience in compliance and data analysis"
+  ],
+  "job_title": "Business Analyst",
+  "company": "",
+  "job_id": "a3e6c7dd-c78c-49af-ab48-82af94ce8be8",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

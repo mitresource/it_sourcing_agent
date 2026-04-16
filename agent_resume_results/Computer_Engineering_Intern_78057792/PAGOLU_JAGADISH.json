@@ -1,0 +1,21 @@
+{
+  "candidate_name": "PAGOLU JAGADISH",
+  "candidate_id": "683a96665306a786e5ba0ad5",
+  "match_score": 30,
+  "shortlisted": false,
+  "reasoning": "While the candidate has strong technical skills in machine learning and AI, they lack direct experience in electrical and computer engineering, which is crucial for the internship role. The responsibilities outlined in the job description focus on product development, testing, and research in engineering contexts, which do not align with the candidate's background in AI and NLP.",
+  "key_strengths": [
+    "Machine learning expertise",
+    "Experience in data analysis",
+    "Proficiency in Python and AI frameworks"
+  ],
+  "key_gaps": [
+    "Lack of experience in electrical and computer engineering",
+    "No direct experience with product development or testing",
+    "Limited knowledge of manufacturing methods and competitive products"
+  ],
+  "job_title": "Computer Engineering Intern",
+  "company": "",
+  "job_id": "78057792-db99-42ca-8c97-8a657ac742b4",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_name": "Kandula Sunil Reddy",
+  "candidate_id": "684917db62cc772bd343a12a",
+  "match_score": 40,
+  "shortlisted": true,
+  "reasoning": "Kandula has a solid foundation in Java and HTML, which aligns with some of the required skills for the internship. Additionally, their background in machine learning could be beneficial for learning about cloud computing and machine learning applications. However, the lack of experience and specific skills in C#, ASP.NET Core, CSS, JavaScript, and TypeScript are significant gaps.",
+  "key_strengths": [
+    "Strong academic background in Computer Science",
+    "Knowledge of HTML",
+    "Familiarity with machine learning concepts",
+    "Self-motivated and flexible to learn new technologies"
+  ],
+  "key_gaps": [
+    "Lack of experience in C#, ASP.NET Core, CSS, JavaScript, and TypeScript",
+    "No prior work experience",
+    "Limited exposure to backend development and test automation processes"
+  ],
+  "job_title": "Codez Summer Internship Program In The Software World",
+  "company": "",
+  "job_id": "f322a361-45cb-4d10-9267-c97904ecfbc8",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

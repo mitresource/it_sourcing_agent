@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Ram Kumar",
+  "candidate_id": "681c36316ddf8c2fb1a15a6e",
+  "match_score": 25,
+  "shortlisted": false,
+  "reasoning": "The candidate has a background in computer science and some relevant programming skills, but lacks direct experience in electrical engineering, product development, and testing, which are critical for the Computer Engineering Intern role. Additionally, the candidate's experience is primarily in web development, which does not align with the responsibilities outlined in the job description.",
+  "key_strengths": [
+    "Proficiency in programming languages like Java and C",
+    "Experience in web development technologies",
+    "Basic understanding of database management"
+  ],
+  "key_gaps": [
+    "Lack of experience in electrical engineering",
+    "No hands-on experience with product development or testing",
+    "Limited exposure to engineering models and schematics"
+  ],
+  "job_title": "Computer Engineering Intern",
+  "company": "",
+  "job_id": "78057792-db99-42ca-8c97-8a657ac742b4",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

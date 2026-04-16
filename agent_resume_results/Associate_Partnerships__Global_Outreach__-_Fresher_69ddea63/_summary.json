@@ -1,0 +1,51 @@
+{
+  "run_id": "da468ef2-8028-47bf-8140-f1e586695b15",
+  "timestamp": "2026-04-16T13:30:30.170655",
+  "job_title": "Associate Partnerships (Global Outreach) - Fresher",
+  "company": "Zetexa Global Private Limited",
+  "job_id": "69ddea63beeb18af9b92d405",
+  "total_candidates": 5,
+  "shortlisted_count": 1,
+  "candidates": [
+    {
+      "rank": 1,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 45,
+      "shortlisted": true,
+      "reasoning": "Kandula Sunil Reddy has a strong educational background with a B. Tech in CSE and relevant certifications in Digital Marketing and Machine Learning, which can be beneficial for the role. While he lacks direct experience in business development or sales, his soft skills such as self-motivation, leadership qualities, and adaptability align well with the job requirements."
+    },
+    {
+      "rank": 2,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 35,
+      "shortlisted": false,
+      "reasoning": "While Naveen has a solid educational background and technical skills in development, the role of Associate Partnerships requires strong communication, sales, and client relationship management skills, which are not evident in his resume. Additionally, the candidate's experience is primarily in technical roles, making him less suitable for a position focused on business development and outreach."
+    },
+    {
+      "rank": 3,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 35,
+      "shortlisted": false,
+      "reasoning": "While Ram Kumar has a solid educational background and some relevant skills in web development, he lacks direct experience in business development, sales, or client relationship management, which are crucial for the Associate Partnerships role. Additionally, his technical skills do not align with the primary responsibilities of the position, which focuses on outreach and lead generation rather than programming."
+    },
+    {
+      "rank": 4,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 30,
+      "shortlisted": false,
+      "reasoning": "While Ashok has strong technical skills and experience in software development, the role of Associate Partnerships requires specific skills in business development, client relationship management, and lead generation, which are not present in his background. Additionally, the position is targeted at freshers, and Ashok's extensive experience may not align with the expectations for this entry-level role."
+    },
+    {
+      "rank": 5,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 30,
+      "shortlisted": false,
+      "reasoning": "While the candidate has strong technical skills in machine learning and AI, they lack relevant experience in business development, sales, or client relationship management, which are crucial for the Associate Partnerships role. Additionally, the candidate's background does not align with the required soft skills and adaptability needed for outreach and lead generation tasks."
+    }
+  ]
+}

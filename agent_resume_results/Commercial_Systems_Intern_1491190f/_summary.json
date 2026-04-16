@@ -1,0 +1,91 @@
+{
+  "run_id": "b0fa876f-e23d-47dd-a572-a2ba3a526272",
+  "timestamp": "2026-04-16T10:40:14.298539",
+  "job_title": "Commercial Systems Intern",
+  "company": "",
+  "job_id": "1491190f-2f9d-48a2-aa61-bc484fba86bc",
+  "total_candidates": 10,
+  "shortlisted_count": 0,
+  "candidates": [
+    {
+      "rank": 1,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 35,
+      "shortlisted": false,
+      "reasoning": "While Ashok has strong technical skills and experience in software development, he lacks specific experience with hotel management systems and system configuration, which are critical for the Commercial Systems Intern role. Additionally, the responsibilities of the position require a focus on content management and compliance with brand standards, areas where Ashok's experience does not align."
+    },
+    {
+      "rank": 2,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "While Naveen has a solid background in full stack development, his skills and experience do not align with the specific requirements of the Commercial Systems Intern role, which focuses on hotel management systems, system configuration, and content management. The candidate lacks relevant experience in hotel systems and the necessary soft skills like proactive learning and teamwork in a hospitality context."
+    },
+    {
+      "rank": 3,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks relevant experience in hotel management systems and system configuration, which are critical for the role. While they have a solid foundation in web development and programming, the specific skills and responsibilities outlined in the job description do not align with their background."
+    },
+    {
+      "rank": 4,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong technical background in machine learning and AI, but lacks relevant experience in hotel management systems and the specific responsibilities outlined in the job description. The required skills such as system configuration and hotel content management are not present in the candidate's profile, leading to a low match score."
+    },
+    {
+      "rank": 5,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "While Kandula has strong technical skills in programming and machine learning, they lack relevant experience and specific skills related to hotel management systems, system configuration, and content management. The absence of direct experience in the hospitality industry and the required soft skills for effective communication and teamwork further diminishes their fit for this role."
+    },
+    {
+      "rank": 6,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 20,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks relevant experience and skills directly related to the Delivery Associate position, such as a driver's license, customer service experience, and physical stamina. While they possess some soft skills like time management, these do not compensate for the significant gaps in required qualifications."
+    },
+    {
+      "rank": 7,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 10,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong background in IT and software development but lacks the specific skills and experience required for the Delivery Associate role, such as driving, customer service, and physical stamina. The responsibilities of the position do not align with the candidate's technical expertise."
+    },
+    {
+      "rank": 8,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 10,
+      "shortlisted": false,
+      "reasoning": "The candidate's background is primarily in software development, with no relevant experience or skills related to delivery services. The required skills such as physical stamina, GPS navigation, and customer service are not present in the candidate's profile, leading to a low match score."
+    },
+    {
+      "rank": 9,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 10,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks the necessary skills and experience relevant to the Delivery Associate position, such as a valid driver's license, customer service experience, and physical stamina. Their background is primarily in IT and web development, which does not align with the responsibilities of delivering packages and managing logistics."
+    },
+    {
+      "rank": 10,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 10,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong background in machine learning and AI, but lacks the relevant experience and skills required for the Delivery Associate position. Key responsibilities such as package delivery, customer service, and physical stamina are not addressed in their resume."
+    }
+  ]
+}

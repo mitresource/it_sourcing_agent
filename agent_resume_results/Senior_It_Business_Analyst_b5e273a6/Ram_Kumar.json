@@ -1,0 +1,25 @@
+{
+  "candidate_name": "Ram Kumar",
+  "candidate_id": "681c36316ddf8c2fb1a15a6e",
+  "match_score": 30,
+  "shortlisted": false,
+  "reasoning": "While Ram Kumar has relevant web development skills such as HTML and CSS, he lacks experience with key requirements like Azure DevOps, SQL, and the Software Development Lifecycle. Additionally, his experience is limited to training, which does not meet the expectations for a Senior IT Business Analyst role.",
+  "key_strengths": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React JS",
+    "Web Development"
+  ],
+  "key_gaps": [
+    "Azure DevOps",
+    "SQL",
+    "Software Development Lifecycle",
+    "Business analysis experience",
+    "Stakeholder communication"
+  ],
+  "job_title": "Senior It Business Analyst",
+  "company": "",
+  "job_id": "b5e273a6-59fd-4de7-9e04-4c7eafc22a3f",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

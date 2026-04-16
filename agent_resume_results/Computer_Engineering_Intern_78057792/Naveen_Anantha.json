@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Naveen Anantha",
+  "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+  "match_score": 25,
+  "shortlisted": false,
+  "reasoning": "The candidate has a strong background in full stack development but lacks specific experience and skills related to electrical and computer engineering, which are crucial for the Computer Engineering Intern role. Additionally, the responsibilities outlined in the job description focus on product development, testing, and research, areas where the candidate has limited relevant experience.",
+  "key_strengths": [
+    "Strong frontend and backend development skills",
+    "Experience with real-time projects",
+    "Good educational background in Computer Science"
+  ],
+  "key_gaps": [
+    "Lack of experience in electrical engineering",
+    "No relevant testing or research experience",
+    "Missing skills in creating engineering models and schematics"
+  ],
+  "job_title": "Computer Engineering Intern",
+  "company": "",
+  "job_id": "78057792-db99-42ca-8c97-8a657ac742b4",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

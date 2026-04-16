@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Ashok Palla",
+  "candidate_id": "681456f8767bd54e6f49b290",
+  "match_score": 60,
+  "shortlisted": true,
+  "reasoning": "Ashok has strong experience in web development and relevant technologies such as Python, HTML, CSS, and TypeScript, which align well with the internship's requirements. His background in CI/CD processes and application support also adds value, although he lacks direct experience with C# and ASP.NET Core.",
+  "key_strengths": [
+    "Strong web development skills in HTML, CSS, JavaScript, and TypeScript",
+    "Experience with Python and CI/CD processes",
+    "Proven ability to collaborate and communicate effectively in teams"
+  ],
+  "key_gaps": [
+    "Lack of experience with C# and ASP.NET Core",
+    "No direct experience in cloud computing and machine learning applications",
+    "Limited exposure to test automation processes"
+  ],
+  "job_title": "Codez Summer Internship Program In The Software World",
+  "company": "",
+  "job_id": "f322a361-45cb-4d10-9267-c97904ecfbc8",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

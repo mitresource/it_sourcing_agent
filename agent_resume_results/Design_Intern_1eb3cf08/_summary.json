@@ -1,0 +1,251 @@
+{
+  "run_id": "b0fa876f-e23d-47dd-a572-a2ba3a526272",
+  "timestamp": "2026-04-16T10:40:14.298539",
+  "job_title": "Design Intern",
+  "company": "",
+  "job_id": "1eb3cf08-5bc7-4ee9-8f53-7600ee46c77b",
+  "total_candidates": 30,
+  "shortlisted_count": 1,
+  "candidates": [
+    {
+      "rank": 1,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 45,
+      "shortlisted": true,
+      "reasoning": "The candidate has strong data analysis skills and experience in developing AI/ML models, which aligns with the responsibilities of converting raw data into actionable insights and supporting operational data projects. However, the candidate lacks specific experience with Excel and application testing, which are critical for this role."
+    },
+    {
+      "rank": 2,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 45,
+      "shortlisted": false,
+      "reasoning": "While Ashok has a strong background in software development and relevant technical skills, the position requires specific experience in electrical and computer engineering, testing, and product development activities that are not evident in his resume. His experience is primarily focused on software rather than hardware or engineering prototypes, which is crucial for this internship."
+    },
+    {
+      "rank": 3,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 35,
+      "shortlisted": false,
+      "reasoning": "While Ashok has strong technical skills and experience in software development, he lacks specific experience with hotel management systems and system configuration, which are critical for the Commercial Systems Intern role. Additionally, the responsibilities of the position require a focus on content management and compliance with brand standards, areas where Ashok's experience does not align."
+    },
+    {
+      "rank": 4,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 35,
+      "shortlisted": false,
+      "reasoning": "While Ashok has strong technical skills and experience in software development, he lacks specific experience in business analysis, banking knowledge, and the required multilingual capability in Cantonese. His background does not align closely with the responsibilities outlined in the job description, which focuses on compliance, data analysis, and process improvement."
+    },
+    {
+      "rank": 5,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 35,
+      "shortlisted": false,
+      "reasoning": "While Ashok has strong technical skills in software development and application support, he lacks direct experience in data analysis, Excel automation, and application testing, which are critical for the role. His background is more focused on software development rather than the operational and analytical tasks required for this position."
+    },
+    {
+      "rank": 6,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 35,
+      "shortlisted": false,
+      "reasoning": "While Naveen has a solid foundation in application development and relevant technical skills, he lacks direct experience in data analysis, Excel, and application testing, which are critical for the Enterprise Operations & Technology Summer Analyst role. His focus on full-stack development does not align closely with the responsibilities outlined in the job description."
+    },
+    {
+      "rank": 7,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 30,
+      "shortlisted": false,
+      "reasoning": "While Ram Kumar has a solid foundation in programming and web development, he lacks direct experience with the specific skills and responsibilities outlined in the job description, such as data analysis, application testing, and Excel automation. His training experience does not align closely with the operational and analytical focus of the role."
+    },
+    {
+      "rank": 8,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 30,
+      "shortlisted": false,
+      "reasoning": "While Kandula has a solid educational background and some relevant technical skills, he lacks direct experience in data analysis, application testing, and the specific tools mentioned in the job description, such as Excel for automation and reporting. The absence of relevant experience and skills directly related to the responsibilities of the role significantly lowers his fit for this position."
+    },
+    {
+      "rank": 9,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 30,
+      "shortlisted": false,
+      "reasoning": "While the candidate has strong technical skills in machine learning and AI, they lack direct experience in electrical and computer engineering, which is crucial for the internship role. The responsibilities outlined in the job description focus on product development, testing, and research in engineering contexts, which do not align with the candidate's background in AI and NLP."
+    },
+    {
+      "rank": 10,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 30,
+      "shortlisted": false,
+      "reasoning": "While Kandula has a solid educational background in Computer Science and relevant technical skills, there is a significant lack of experience in electrical engineering and hands-on testing, which are crucial for the Computer Engineering Intern role. The absence of practical experience in product development and prototype testing further diminishes the fit for this position."
+    },
+    {
+      "rank": 11,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "While Naveen has a solid background in full stack development, his skills and experience do not align with the specific requirements of the Commercial Systems Intern role, which focuses on hotel management systems, system configuration, and content management. The candidate lacks relevant experience in hotel systems and the necessary soft skills like proactive learning and teamwork in a hospitality context."
+    },
+    {
+      "rank": 12,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks relevant experience in hotel management systems and system configuration, which are critical for the role. While they have a solid foundation in web development and programming, the specific skills and responsibilities outlined in the job description do not align with their background."
+    },
+    {
+      "rank": 13,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong technical background in machine learning and AI, but lacks relevant experience in hotel management systems and the specific responsibilities outlined in the job description. The required skills such as system configuration and hotel content management are not present in the candidate's profile, leading to a low match score."
+    },
+    {
+      "rank": 14,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "While Kandula has strong technical skills in programming and machine learning, they lack relevant experience and specific skills related to hotel management systems, system configuration, and content management. The absence of direct experience in the hospitality industry and the required soft skills for effective communication and teamwork further diminishes their fit for this role."
+    },
+    {
+      "rank": 15,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong technical background in machine learning and data analysis but lacks the specific skills and experience required for the Business Analyst role, such as banking knowledge, compliance surveillance, and communication skills. Additionally, the candidate does not demonstrate proficiency in the required multilingual capability (Cantonese)."
+    },
+    {
+      "rank": 16,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks relevant experience and specific skills required for the Business Analyst position, such as analytical skills, banking knowledge, and multilingual capabilities. While they possess some technical skills, they do not align with the responsibilities outlined in the job description."
+    },
+    {
+      "rank": 17,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong background in full stack development but lacks specific experience and skills related to electrical and computer engineering, which are crucial for the Computer Engineering Intern role. Additionally, the responsibilities outlined in the job description focus on product development, testing, and research, areas where the candidate has limited relevant experience."
+    },
+    {
+      "rank": 18,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate has a background in computer science and some relevant programming skills, but lacks direct experience in electrical engineering, product development, and testing, which are critical for the Computer Engineering Intern role. Additionally, the candidate's experience is primarily in web development, which does not align with the responsibilities outlined in the job description."
+    },
+    {
+      "rank": 19,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks the specific design skills and experience required for the Design Intern position, such as proficiency in Adobe Creative Cloud, CAD software, and visualization skills. While they have a background in web development, it does not align with the responsibilities of creating visual media and prototypes as outlined in the job description."
+    },
+    {
+      "rank": 20,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 25,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong background in machine learning and AI, but lacks the specific design skills and experience required for the Design Intern position. Key skills such as visualization, Adobe Creative Cloud, and CAD software are not present in the candidate's profile, which are critical for this role."
+    },
+    {
+      "rank": 21,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 20,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks relevant experience and skills directly related to the Delivery Associate position, such as a driver's license, customer service experience, and physical stamina. While they possess some soft skills like time management, these do not compensate for the significant gaps in required qualifications."
+    },
+    {
+      "rank": 22,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 20,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks the necessary skills and experience relevant to the Business Analyst role, such as analytical skills, banking knowledge, and experience with compliance and data analysis. Their background is primarily in full stack development, which does not align with the responsibilities outlined in the job description."
+    },
+    {
+      "rank": 23,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 20,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks relevant experience and skills directly related to the Business Analyst role, such as analytical skills, banking knowledge, and multilingual capabilities. Their background is primarily in web development and programming, which does not align with the responsibilities outlined in the job description."
+    },
+    {
+      "rank": 24,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 20,
+      "shortlisted": false,
+      "reasoning": "The candidate has strong technical skills in software development but lacks the specific design skills and experience required for the Design Intern position. Key skills such as visualization, Adobe Creative Cloud, and CAD software are not present in the candidate's profile, which are critical for this role."
+    },
+    {
+      "rank": 25,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 20,
+      "shortlisted": false,
+      "reasoning": "The candidate's background is primarily in full stack development, which does not align with the design-focused requirements of the Design Intern position. While they possess technical skills, they lack the necessary design skills and experience with tools like Adobe Creative Cloud and CAD software, which are critical for this role."
+    },
+    {
+      "rank": 26,
+      "candidate_name": "Kandula Sunil Reddy",
+      "candidate_id": "684917db62cc772bd343a12a",
+      "match_score": 15,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks relevant design skills and experience that are crucial for the Design Intern position, such as proficiency in Adobe Creative Cloud, CAD software, and visualization skills. Additionally, there is no demonstrated experience in design-related tasks or projects, which significantly lowers their fit for this role."
+    },
+    {
+      "rank": 27,
+      "candidate_name": "Ashok Palla",
+      "candidate_id": "681456f8767bd54e6f49b290",
+      "match_score": 10,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong background in IT and software development but lacks the specific skills and experience required for the Delivery Associate role, such as driving, customer service, and physical stamina. The responsibilities of the position do not align with the candidate's technical expertise."
+    },
+    {
+      "rank": 28,
+      "candidate_name": "Naveen Anantha",
+      "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+      "match_score": 10,
+      "shortlisted": false,
+      "reasoning": "The candidate's background is primarily in software development, with no relevant experience or skills related to delivery services. The required skills such as physical stamina, GPS navigation, and customer service are not present in the candidate's profile, leading to a low match score."
+    },
+    {
+      "rank": 29,
+      "candidate_name": "Ram Kumar",
+      "candidate_id": "681c36316ddf8c2fb1a15a6e",
+      "match_score": 10,
+      "shortlisted": false,
+      "reasoning": "The candidate lacks the necessary skills and experience relevant to the Delivery Associate position, such as a valid driver's license, customer service experience, and physical stamina. Their background is primarily in IT and web development, which does not align with the responsibilities of delivering packages and managing logistics."
+    },
+    {
+      "rank": 30,
+      "candidate_name": "PAGOLU JAGADISH",
+      "candidate_id": "683a96665306a786e5ba0ad5",
+      "match_score": 10,
+      "shortlisted": false,
+      "reasoning": "The candidate has a strong background in machine learning and AI, but lacks the relevant experience and skills required for the Delivery Associate position. Key responsibilities such as package delivery, customer service, and physical stamina are not addressed in their resume."
+    }
+  ]
+}

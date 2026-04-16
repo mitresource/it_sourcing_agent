@@ -1,0 +1,19 @@
+{
+  "candidate_name": "Ram Kumar",
+  "candidate_id": "681c36316ddf8c2fb1a15a6e",
+  "match_score": 10,
+  "shortlisted": false,
+  "reasoning": "The candidate lacks the necessary skills and experience relevant to the Delivery Associate position, such as a valid driver's license, customer service experience, and physical stamina. Their background is primarily in IT and web development, which does not align with the responsibilities of delivering packages and managing logistics.",
+  "key_strengths": [],
+  "key_gaps": [
+    "Driver's License",
+    "Customer Service experience",
+    "GPS Navigation skills",
+    "Time Management experience",
+    "Physical Stamina"
+  ],
+  "job_title": "Delivery Associate",
+  "company": "",
+  "job_id": "bb21b79c-71ca-423c-ac3f-c20a9268cc69",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

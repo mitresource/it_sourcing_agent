@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Ram Kumar",
+  "candidate_id": "681c36316ddf8c2fb1a15a6e",
+  "match_score": 55,
+  "shortlisted": true,
+  "reasoning": "Ram Kumar has a solid foundation in web development with skills in HTML, CSS, and JavaScript, which are essential for the internship. His experience with React JS and training in various web technologies align well with the responsibilities of developing frontend components. However, he lacks experience in C#, ASP.NET Core, and Python, which are critical for the backend development tasks outlined in the job description.",
+  "key_strengths": [
+    "Proficient in HTML, CSS, and JavaScript",
+    "Experience with React JS",
+    "Training in web development technologies"
+  ],
+  "key_gaps": [
+    "No experience with C# or ASP.NET Core",
+    "Limited knowledge of Python",
+    "Lacks experience in cloud computing and machine learning applications"
+  ],
+  "job_title": "Codez Summer Internship Program In The Software World",
+  "company": "",
+  "job_id": "f322a361-45cb-4d10-9267-c97904ecfbc8",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

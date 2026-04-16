@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Naveen Anantha",
+  "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+  "match_score": 35,
+  "shortlisted": false,
+  "reasoning": "While Naveen has a solid foundation in full stack development and relevant experience in application development, he lacks proficiency in the required programming languages (Java, Python, C++) and DevOps tools specified in the job description. His experience is primarily focused on frontend technologies and Node.js, which does not align closely with the responsibilities of the Software Engineering Analyst role.",
+  "key_strengths": [
+    "Strong frontend development skills",
+    "Experience with REST APIs",
+    "Good educational background in Computer Science"
+  ],
+  "key_gaps": [
+    "Lack of experience in Java, Python, and C++",
+    "No exposure to DevOps tools",
+    "Limited experience in software testing and validation"
+  ],
+  "job_title": "Software Engineering Analyst",
+  "company": "",
+  "job_id": "5155e67d-cff4-41dc-9bd9-566310d6b09a",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

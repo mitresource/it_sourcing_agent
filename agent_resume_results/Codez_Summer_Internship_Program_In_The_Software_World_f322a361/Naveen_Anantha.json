@@ -1,0 +1,22 @@
+{
+  "candidate_name": "Naveen Anantha",
+  "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+  "match_score": 60,
+  "shortlisted": true,
+  "reasoning": "Naveen has a solid foundation in frontend technologies like HTML, CSS, and JavaScript, which aligns well with the internship's requirements. His experience with Git and involvement in real-time projects demonstrate his ability to collaborate and contribute to software development. However, he lacks experience with C#, ASP.NET Core, and Python, which are also important for the role.",
+  "key_strengths": [
+    "Strong frontend skills in HTML, CSS, and JavaScript",
+    "Experience with Git and version control",
+    "Practical experience from real-time projects",
+    "Eagerness to learn and grow in a collaborative environment"
+  ],
+  "key_gaps": [
+    "Lack of experience with C# and ASP.NET Core",
+    "No exposure to Python",
+    "Limited backend experience compared to the requirements"
+  ],
+  "job_title": "Codez Summer Internship Program In The Software World",
+  "company": "",
+  "job_id": "f322a361-45cb-4d10-9267-c97904ecfbc8",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

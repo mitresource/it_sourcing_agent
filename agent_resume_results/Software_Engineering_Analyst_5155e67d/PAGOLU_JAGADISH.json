@@ -1,0 +1,21 @@
+{
+  "candidate_name": "PAGOLU JAGADISH",
+  "candidate_id": "683a96665306a786e5ba0ad5",
+  "match_score": 30,
+  "shortlisted": false,
+  "reasoning": "While the candidate has strong skills in Python and experience in machine learning, they lack proficiency in Java, C++, and SQL, which are essential for the Software Engineering Analyst role. Additionally, their experience is primarily focused on AI/ML rather than general software development, which does not align closely with the job responsibilities.",
+  "key_strengths": [
+    "Strong Python skills",
+    "Experience in AI/ML and natural language processing",
+    "Ability to collaborate cross-functionally"
+  ],
+  "key_gaps": [
+    "Lack of experience in Java, C++, and SQL",
+    "Limited software development experience",
+    "No mention of DevOps tools or practices"
+  ],
+  "job_title": "Software Engineering Analyst",
+  "company": "",
+  "job_id": "5155e67d-cff4-41dc-9bd9-566310d6b09a",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

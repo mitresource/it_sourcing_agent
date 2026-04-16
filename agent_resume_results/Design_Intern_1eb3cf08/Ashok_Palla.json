@@ -1,0 +1,22 @@
+{
+  "candidate_name": "Ashok Palla",
+  "candidate_id": "681456f8767bd54e6f49b290",
+  "match_score": 20,
+  "shortlisted": false,
+  "reasoning": "The candidate has strong technical skills in software development but lacks the specific design skills and experience required for the Design Intern position. Key skills such as visualization, Adobe Creative Cloud, and CAD software are not present in the candidate's profile, which are critical for this role.",
+  "key_strengths": [
+    "Strong communication skills",
+    "Experience in teamwork",
+    "Proficient in software development"
+  ],
+  "key_gaps": [
+    "Lack of design skills",
+    "No experience with Adobe Creative Cloud",
+    "No knowledge of CAD software",
+    "No relevant experience in prototyping or packaging design"
+  ],
+  "job_title": "Design Intern",
+  "company": "",
+  "job_id": "1eb3cf08-5bc7-4ee9-8f53-7600ee46c77b",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

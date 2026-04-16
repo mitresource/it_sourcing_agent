@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Ram Kumar",
+  "candidate_id": "681c36316ddf8c2fb1a15a6e",
+  "match_score": 30,
+  "shortlisted": false,
+  "reasoning": "While Ram Kumar has a solid foundation in programming and web development, he lacks direct experience with the specific skills and responsibilities outlined in the job description, such as data analysis, application testing, and Excel automation. His training experience does not align closely with the operational and analytical focus of the role.",
+  "key_strengths": [
+    "Intermediate programming skills",
+    "Web development experience",
+    "Basic understanding of databases"
+  ],
+  "key_gaps": [
+    "Lack of experience in data analysis",
+    "No experience with Excel or automation",
+    "No relevant experience in application testing or operational data projects"
+  ],
+  "job_title": "Enterprise Operations & Technology Summer Analyst",
+  "company": "",
+  "job_id": "22be86dc-f03d-4c58-95c6-2d392748135c",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

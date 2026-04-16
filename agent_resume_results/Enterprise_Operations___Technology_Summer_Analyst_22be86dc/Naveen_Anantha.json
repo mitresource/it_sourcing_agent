@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Naveen Anantha",
+  "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+  "match_score": 35,
+  "shortlisted": false,
+  "reasoning": "While Naveen has a solid foundation in application development and relevant technical skills, he lacks direct experience in data analysis, Excel, and application testing, which are critical for the Enterprise Operations & Technology Summer Analyst role. His focus on full-stack development does not align closely with the responsibilities outlined in the job description.",
+  "key_strengths": [
+    "Strong frontend and backend development skills",
+    "Experience with real-time projects",
+    "Knowledge of REST APIs and database management"
+  ],
+  "key_gaps": [
+    "Lack of experience in data analysis",
+    "No demonstrated proficiency in Excel or automation",
+    "Limited exposure to application testing and defect documentation"
+  ],
+  "job_title": "Enterprise Operations & Technology Summer Analyst",
+  "company": "",
+  "job_id": "22be86dc-f03d-4c58-95c6-2d392748135c",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

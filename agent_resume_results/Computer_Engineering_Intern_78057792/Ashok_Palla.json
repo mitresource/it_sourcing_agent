@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Ashok Palla",
+  "candidate_id": "681456f8767bd54e6f49b290",
+  "match_score": 45,
+  "shortlisted": false,
+  "reasoning": "While Ashok has a strong background in software development and relevant technical skills, the position requires specific experience in electrical and computer engineering, testing, and product development activities that are not evident in his resume. His experience is primarily focused on software rather than hardware or engineering prototypes, which is crucial for this internship.",
+  "key_strengths": [
+    "Strong software development skills",
+    "Proficient in Python and web technologies",
+    "Advanced communication and teamwork abilities"
+  ],
+  "key_gaps": [
+    "Lack of direct experience in electrical and computer engineering",
+    "No experience with performance testing or prototype assembly",
+    "Limited exposure to product development and manufacturing methods"
+  ],
+  "job_title": "Computer Engineering Intern",
+  "company": "",
+  "job_id": "78057792-db99-42ca-8c97-8a657ac742b4",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

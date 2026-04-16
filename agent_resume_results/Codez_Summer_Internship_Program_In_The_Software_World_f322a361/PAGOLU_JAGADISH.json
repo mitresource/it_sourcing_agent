@@ -1,0 +1,21 @@
+{
+  "candidate_name": "PAGOLU JAGADISH",
+  "candidate_id": "683a96665306a786e5ba0ad5",
+  "match_score": 30,
+  "shortlisted": false,
+  "reasoning": "While the candidate has strong experience in machine learning and Python, they lack proficiency in key technologies required for the internship, such as C#, ASP.NET Core, HTML, CSS, and JavaScript. Additionally, their experience is primarily focused on AI/ML rather than software development, which is the core of the internship role.",
+  "key_strengths": [
+    "Strong background in Python and machine learning",
+    "Experience with AI/ML model development",
+    "Ability to collaborate on cross-functional projects"
+  ],
+  "key_gaps": [
+    "Lack of experience with C#, ASP.NET Core, HTML, CSS, and JavaScript",
+    "Limited exposure to software development practices and tools",
+    "No experience in backend/frontend component development"
+  ],
+  "job_title": "Codez Summer Internship Program In The Software World",
+  "company": "",
+  "job_id": "f322a361-45cb-4d10-9267-c97904ecfbc8",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

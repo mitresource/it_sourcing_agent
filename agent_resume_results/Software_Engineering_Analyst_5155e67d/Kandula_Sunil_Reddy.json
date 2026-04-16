@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Kandula Sunil Reddy",
+  "candidate_id": "684917db62cc772bd343a12a",
+  "match_score": 50,
+  "shortlisted": true,
+  "reasoning": "The candidate possesses relevant technical skills in Java, C++, and SQL, which align with the job requirements. However, the lack of experience and specific mention of Python and DevOps tools is a concern. Despite this, the candidate's educational background and certifications in Machine Learning indicate a willingness to learn and adapt.",
+  "key_strengths": [
+    "Proficient in Java, C++, and SQL",
+    "Strong educational background in Computer Science",
+    "Certifications in Machine Learning"
+  ],
+  "key_gaps": [
+    "No experience listed",
+    "Lacks proficiency in Python",
+    "No mention of DevOps tools"
+  ],
+  "job_title": "Software Engineering Analyst",
+  "company": "",
+  "job_id": "5155e67d-cff4-41dc-9bd9-566310d6b09a",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

@@ -1,0 +1,17 @@
+{
+  "candidate_name": "Naveen Anantha",
+  "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+  "match_score": 10,
+  "shortlisted": false,
+  "reasoning": "The candidate's background is primarily in software development, with no relevant experience or skills related to delivery services. The required skills such as physical stamina, GPS navigation, and customer service are not present in the candidate's profile, leading to a low match score.",
+  "key_strengths": [],
+  "key_gaps": [
+    "No experience in delivery services",
+    "Lack of physical stamina and related skills",
+    "No customer service experience"
+  ],
+  "job_title": "Delivery Associate",
+  "company": "",
+  "job_id": "bb21b79c-71ca-423c-ac3f-c20a9268cc69",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

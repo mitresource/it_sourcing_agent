@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Naveen Anantha",
+  "candidate_id": "681b20d36ddf8c2fb1a15a6a",
+  "match_score": 35,
+  "shortlisted": false,
+  "reasoning": "While Naveen has a solid foundation in frontend and backend development, he lacks direct experience with key skills required for the Senior IT Business Analyst role, such as Azure DevOps, SQL proficiency beyond basic knowledge, and experience in business analysis or stakeholder communication. His current role as a Junior Application Developer does not align closely with the responsibilities outlined in the job description.",
+  "key_strengths": [
+    "Strong frontend development skills in HTML and CSS",
+    "Experience with REST APIs and API integration",
+    "Basic understanding of SQL and relational databases"
+  ],
+  "key_gaps": [
+    "Lack of experience with Azure DevOps",
+    "No direct experience in business analysis or stakeholder communication",
+    "Limited knowledge of software development lifecycle and project management"
+  ],
+  "job_title": "Senior It Business Analyst",
+  "company": "",
+  "job_id": "b5e273a6-59fd-4de7-9e04-4c7eafc22a3f",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

@@ -1,0 +1,23 @@
+{
+  "candidate_name": "Ram Kumar",
+  "candidate_id": "681c36316ddf8c2fb1a15a6e",
+  "match_score": 20,
+  "shortlisted": false,
+  "reasoning": "The candidate lacks relevant experience and skills directly related to the Business Analyst role, such as analytical skills, banking knowledge, and multilingual capabilities. Their background is primarily in web development and programming, which does not align with the responsibilities outlined in the job description.",
+  "key_strengths": [
+    "Web development skills",
+    "Basic programming knowledge",
+    "Training experience"
+  ],
+  "key_gaps": [
+    "Analytical skills",
+    "Banking knowledge",
+    "Communication skills",
+    "Experience with compliance and data analysis",
+    "Multilingual (Cantonese)"
+  ],
+  "job_title": "Business Analyst",
+  "company": "",
+  "job_id": "a3e6c7dd-c78c-49af-ab48-82af94ce8be8",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

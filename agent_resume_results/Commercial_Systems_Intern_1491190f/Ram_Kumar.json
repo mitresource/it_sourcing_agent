@@ -1,0 +1,21 @@
+{
+  "candidate_name": "Ram Kumar",
+  "candidate_id": "681c36316ddf8c2fb1a15a6e",
+  "match_score": 25,
+  "shortlisted": false,
+  "reasoning": "The candidate lacks relevant experience in hotel management systems and system configuration, which are critical for the role. While they have a solid foundation in web development and programming, the specific skills and responsibilities outlined in the job description do not align with their background.",
+  "key_strengths": [
+    "Web development skills",
+    "Proficiency in HTML, CSS, and JavaScript",
+    "Basic understanding of databases"
+  ],
+  "key_gaps": [
+    "No experience with hotel management systems",
+    "Lack of communication and teamwork experience in a relevant context",
+    "No demonstrated proactive learning in a hotel or commercial systems environment"
+  ],
+  "job_title": "Commercial Systems Intern",
+  "company": "",
+  "job_id": "1491190f-2f9d-48a2-aa61-bc484fba86bc",
+  "evaluated_at": "2026-04-16T10:40:14.298539"
+}

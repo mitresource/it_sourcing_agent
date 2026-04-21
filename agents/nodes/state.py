@@ -19,6 +19,8 @@ class RecruitmentState(TypedDict):
 
     # Output
     shortlisted_candidates: Annotated[List[Dict[str, Any]], operator.add]
+    formatted_resume_data: Annotated[List[Dict[str, Any]], operator.add]
+    tuned_candidates: Annotated[List[Dict[str, Any]], operator.add]
     summary: Optional[str]
 
     # tracking

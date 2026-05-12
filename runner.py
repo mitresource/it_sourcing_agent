@@ -9,7 +9,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(override=True)
 
 from agents.config import load_secrets
 load_secrets()

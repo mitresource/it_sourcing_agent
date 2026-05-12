@@ -1,6 +1,6 @@
 {
-  "run_id": "084ca8e4-208a-4d92-b6f1-c896f8751b3f",
-  "timestamp": "2026-04-16T16:36:29.028352",
+  "run_id": "38c45468-786e-4113-8cde-5ca7c29f9ec1",
+  "timestamp": "2026-04-20T10:00:46.619441",
   "job_title": "Marketing Consultant Internship",
   "company": "My captain",
   "job_id": "69dcd22e70297a2739b366b1",
@@ -13,7 +13,7 @@
       "candidate_id": "684917db62cc772bd343a12a",
       "match_score": 30,
       "shortlisted": false,
-      "reasoning": "While Kandula has a solid educational background and some relevant soft skills, he lacks direct experience in marketing, event planning, and communication, which are crucial for the Marketing Consultant Internship. His technical skills and certifications do not align with the responsibilities outlined in the job description."
+      "reasoning": "While Kandula has a solid educational background and some relevant soft skills, he lacks direct experience in marketing, event planning, and communication, which are crucial for the Marketing Consultant Internship role. His technical skills and certifications do not align with the responsibilities outlined in the job description."
     },
     {
       "rank": 2,
@@ -29,7 +29,7 @@
       "candidate_id": "681b20d36ddf8c2fb1a15a6a",
       "match_score": 25,
       "shortlisted": false,
-      "reasoning": "The candidate has a strong technical background in full stack development but lacks relevant experience and skills in marketing, event planning, and communication, which are crucial for the Marketing Consultant Internship role. Their focus on development does not align with the responsibilities outlined in the job description."
+      "reasoning": "The candidate's background is primarily in full stack development, which does not align with the marketing and event planning focus of the internship. While they possess strong technical skills, they lack relevant experience in marketing, communication, and event execution, which are critical for this role."
     },
     {
       "rank": 4,

@@ -1,0 +1,92 @@
+2026-05-11 16:07:54,880 [INFO] Starting autonomous recruitment process...
+2026-05-11 16:07:57,899 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-05-11 16:08:03,179 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:08:08,719 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:08:18,558 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:08:36,956 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:08:46,792 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:08:49,956 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:08:55,660 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:09:11,236 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:09:20,893 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:09:23,877 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:09:28,970 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:09:45,093 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:09:48,404 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:09:51,404 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:09:58,186 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:10:15,092 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:10:26,528 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:10:29,047 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:10:34,200 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:10:38,378 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:10:53,826 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:11:11,114 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:11:14,055 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:11:20,842 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:11:35,966 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:11:48,841 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:11:51,757 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:11:59,289 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:12:14,763 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:12:24,136 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:12:27,355 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:12:33,467 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:12:49,612 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:13:04,682 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:13:08,015 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:13:14,036 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:13:30,458 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:13:41,412 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:13:43,796 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:13:48,252 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:14:03,595 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:14:13,026 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:14:17,285 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:14:22,732 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:14:27,695 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:14:33,249 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:14:39,106 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:14:55,466 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:15:05,017 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:15:07,699 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:15:13,846 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:15:29,754 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:15:38,236 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:15:40,684 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:15:46,952 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:16:07,619 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:16:17,941 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:16:19,642 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:16:32,048 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:16:46,895 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:17:18,335 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:17:21,446 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 16:17:22,503 [INFO] Email cache saved to C:\Users\MIT\us_it_agents\it_sourcing_agent\last_run_email_cache.json
+2026-05-11 16:17:24,061 [INFO] Email sent to jagadiahjagu@gmail.com
+2026-05-11 16:17:24,067 [INFO] ========== RUN COMPLETED ==========
+2026-05-11 16:17:24,067 [INFO] Run ID: 6cee4d8d-60ca-48bb-901e-a5f8c84c4227
+2026-05-11 16:17:24,067 [INFO] Total Jobs Found: 20
+2026-05-11 16:17:24,067 [INFO] Jobs Processed: 20
+2026-05-11 16:17:24,067 [INFO] Processed Job IDs: ['6a01abdba89ddb4750793584', '6a01abc6a89ddb4750793583', '6a01abafa89ddb4750793582', '6a01ab9ca89ddb4750793581', '6a01ab88a89ddb4750793580', '6a01ab75a89ddb475079357f', '6a01ab5ea89ddb475079357e', '6a01ab47a89ddb475079357d', '6a01ab2fa89ddb475079357c', '6a01ab1ca89ddb475079357b', '6a01ab0aa89ddb475079357a', '6a01aaf5a89ddb4750793579', '6a01aadba89ddb4750793578', '6a01aac9a89ddb4750793577', '6a01aab7a89ddb4750793576', '6a01aa9ba89ddb4750793575', '6a01aa84a89ddb4750793574', '6a01aa6ba89ddb4750793573', '6a01aa59a89ddb4750793572', '6a01aa44a89ddb4750793571']
+2026-05-11 16:17:24,067 [INFO] Total: 20 candidate evaluations across all jobs, 14 shortlisted
+2026-05-11 16:17:24,067 [INFO] Results saved to: agent_resume_results/
+2026-05-11 16:17:24,067 [INFO] Email notification: SENT
+2026-05-11 17:57:09,731 [INFO] Starting autonomous recruitment process...
+2026-05-11 17:57:12,526 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-05-11 17:57:18,198 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:22,972 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:26,832 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:34,825 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:45,379 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:48,781 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 17:57:49,723 [INFO] Email cache saved to C:\Users\MIT\us_it_agents\it_sourcing_agent\last_run_email_cache.json
+2026-05-11 17:57:50,687 [INFO] Email sent to jagadiahjagu@gmail.com
+2026-05-11 17:57:50,687 [INFO] ========== RUN COMPLETED ==========
+2026-05-11 17:57:50,687 [INFO] Run ID: fab67205-ad55-4147-be17-c2116f3beb10
+2026-05-11 17:57:50,687 [INFO] Total Jobs Found: 3
+2026-05-11 17:57:50,687 [INFO] Jobs Processed: 3
+2026-05-11 17:57:50,691 [INFO] Processed Job IDs: ['6a01cb0a461aec9a9051c643', '6a01caf4461aec9a9051c642', '6a01cade461aec9a9051c641']
+2026-05-11 17:57:50,691 [INFO] Total: 3 candidate evaluations across all jobs, 1 shortlisted
+2026-05-11 17:57:50,691 [INFO] Results saved to: agent_resume_results/
+2026-05-11 17:57:50,691 [INFO] Email notification: SENT

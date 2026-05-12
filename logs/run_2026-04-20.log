@@ -1,0 +1,44 @@
+2026-04-20 10:00:46,180 [INFO] Starting autonomous recruitment process...
+2026-04-20 10:00:53,955 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:00:58,102 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:02,246 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:06,245 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:10,167 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:14,828 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:18,272 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:21,863 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:25,614 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:29,465 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:32,664 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:36,037 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:01:36,163 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-20 10:01:36,664 [INFO] ========== RUN COMPLETED ==========
+2026-04-20 10:01:36,664 [INFO] Run ID: 38c45468-786e-4113-8cde-5ca7c29f9ec1
+2026-04-20 10:01:36,664 [INFO] Total Jobs Found: 2
+2026-04-20 10:01:36,664 [INFO] Jobs Processed: 2
+2026-04-20 10:01:36,665 [INFO] Processed Job IDs: ['69ddea63beeb18af9b92d405', '69dcd22e70297a2739b366b1']
+2026-04-20 10:01:36,665 [INFO] Total: 10 candidate evaluations across all jobs, 1 shortlisted
+2026-04-20 10:01:36,665 [INFO] Results saved to: agent_resume_results/
+2026-04-20 10:01:36,665 [INFO] Email notification: SENT
+2026-04-20 10:13:07,726 [INFO] Starting autonomous recruitment process...
+2026-04-20 10:13:12,349 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:15,030 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:18,023 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:21,067 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:23,833 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:26,593 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:28,442 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:30,872 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:33,354 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:35,810 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:39,501 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:42,258 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-20 10:13:42,363 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-20 10:13:42,784 [INFO] ========== RUN COMPLETED ==========
+2026-04-20 10:13:42,784 [INFO] Run ID: 0a4d85d8-9314-43c2-838c-715e69a0914d
+2026-04-20 10:13:42,784 [INFO] Total Jobs Found: 2
+2026-04-20 10:13:42,784 [INFO] Jobs Processed: 2
+2026-04-20 10:13:42,784 [INFO] Processed Job IDs: ['69dcd21870297a2739b366b0', '69dcd1fb70297a2739b366af']
+2026-04-20 10:13:42,784 [INFO] Total: 10 candidate evaluations across all jobs, 1 shortlisted
+2026-04-20 10:13:42,784 [INFO] Results saved to: agent_resume_results/
+2026-04-20 10:13:42,784 [INFO] Email notification: SENT

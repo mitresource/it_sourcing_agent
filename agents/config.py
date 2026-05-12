@@ -10,10 +10,16 @@ SECRET_REGION = "ap-south-1"
 
 def load_secrets():
     """
-    Fetch OPENAI_API_KEY and MONGO_URI from AWS Secrets Manager
+    Fetch all API keys and credentials from AWS Secrets Manager
     and inject them into environment variables.
 
     Falls back to .env values if AWS fetch fails (local dev).
+
+    Expected keys in the AWS secret:
+        OPENAI_API_KEY
+        MONGO_URI
+        FIRECRAWL_API_KEY
+        ANTHROPIC_API_KEY
     """
     try:
         session = boto3.session.Session()
@@ -25,14 +31,21 @@ def load_secrets():
         response = client.get_secret_value(SecretId=SECRET_NAME)
         secrets = json.loads(response["SecretString"])
 
-        # Set as env vars so downstream libs (LangChain, Motor) pick them up
-        if secrets.get("OPENAI_API_KEY"):
-            os.environ["OPENAI_API_KEY"] = secrets["OPENAI_API_KEY"]
+        # Inject each key into environment if present in the secret
+        keys_to_load = [
+            "OPENAI_API_KEY",
+            "MONGO_URI",
+            "FIRECRAWL_API_KEY",
+            "CLAUDEAI_API_KEY",
+        ]
 
-        if secrets.get("MONGO_URI"):
-            os.environ["MONGO_URI"] = secrets["MONGO_URI"]
+        loaded = []
+        for key in keys_to_load:
+            if secrets.get(key):
+                os.environ[key] = secrets[key]
+                loaded.append(key)
 
-        print(f"[OK] Secrets loaded from AWS Secrets Manager ({SECRET_NAME})")
+        print(f"[OK] Secrets loaded from AWS Secrets Manager ({SECRET_NAME}): {', '.join(loaded)}")
 
     except ClientError as e:
         print(f"[WARN] AWS Secrets Manager error: {e.response['Error']['Message']}")

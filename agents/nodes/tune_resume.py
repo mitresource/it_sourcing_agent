@@ -1,135 +1,133 @@
-from typing import Dict, Any, List
+"""
+Resume Tuner Node
+
+Takes the FORMATTED resume (already structured JSON) as the base and
+adds only the JD-relevant content that is missing.
+
+Pipeline per candidate:
+  1. GAP ANALYSIS  — LLM reads the formatted resume + JD, returns only
+                     the additions needed (skills, summary sentences,
+                     experience bullets). Nothing is removed.
+  2. PYTHON MERGE  — Additions are merged onto the formatted resume in
+                     pure Python code (no LLM involvement). The original
+                     content is guaranteed to be 100% preserved.
+  3. VALIDATION    — Tuned resume is checked against the formatted baseline.
+  4. RE-SCORE      — LLM scores the merged resume against the JD.
+  5. UPLOAD        — Structured tuned resume is uploaded to S3.
+"""
+
+import copy
 import json
+from typing import Dict, Any, List
 
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 
-from agents.db import resume_collection_name, tuned_resumes_collection
+from agents.db import bench_resume_collection, tuned_resumes_collection
 from agents.utils.s3_utils import upload_resume_json, tuned_s3_key, generate_presigned_url
+from agents.nodes.validate_resume import validate_tuned_resume
+
+llm = ChatOpenAI(model="gpt-4o", temperature=0)
 
 
-llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.3)
+# ── Prompt 1: Gap analysis → additions only ──────────────────────────────────
 
+GAP_ANALYSIS_PROMPT = """
+You are an expert IT ATS resume coach. Your job is to maximise a candidate's ATS match score
+for a specific job description by adding the right keywords and content.
 
-# ============== PROMPT 1: Tune the resume ==============
-TUNE_PROMPT = """
-You are an expert IT resume writer and career coach with 15+ years of experience.
+Current ATS score: {before_score}/100
+Target ATS score: {target_score}/100 (you must close this gap)
 
-Your job is to REWRITE a candidate's resume to better match a specific Job Description (JD).
+Your task is ADDITIVE ONLY — do not remove or rewrite anything already in the resume.
+Analyse every single requirement in the JD and identify what is MISSING or under-represented.
+Be thorough and aggressive — a {score_gap}-point gap needs real content additions.
 
-STRICT RULES — NEVER violate these:
-1. Do NOT change or invent: candidate name, email, phone, location, education (degrees, institutions, graduation dates), company names, job titles, employment dates, certifications names.
-2. You CAN improve: professional summary, skills list (add relevant skills the candidate likely has based on their experience), experience bullet points (rephrase to highlight JD-relevant keywords), add missing JD keywords naturally.
-3. The goal is to make the resume PASS ATS (Applicant Tracking Systems) for this specific JD.
-4. Do not fabricate experience or skills that have zero basis in the original resume.
-
-Job Description:
+━━━ JOB DESCRIPTION ━━━
 {job_details}
 
-Original Resume:
-{original_resume}
+━━━ CANDIDATE'S FORMATTED RESUME (do NOT modify — analysis only) ━━━
+{formatted_resume}
 
-Return ONLY valid JSON with this exact structure:
+━━━ REQUIRED OUTPUT (valid JSON only — no markdown fences) ━━━
 {{
-  "summary": "improved professional summary (2-4 sentences, JD-aligned)",
-  "skills": ["skill1", "skill2", ...],
-  "experience": [
-    {{
-      "company": "same company name",
-      "title": "same job title",
-      "dates": "same dates",
-      "bullets": ["rewritten bullet 1", "rewritten bullet 2", ...]
-    }}
-  ],
-  "improvements_made": ["list of specific improvements made", "e.g. Added Spring Boot to skills", "Reframed experience to highlight microservices"]
-}}
-"""
-
-# ============== PROMPT 2: Re-score the tuned resume ==============
-RESCORE_PROMPT = """
-You are an expert IT recruiter with 15+ years experience.
-
-Job Details:
-{job_details}
-
-Candidate Resume (TUNED VERSION):
-{resume_text}
-
-Analyze how well this TUNED candidate resume fits the job.
-Return ONLY valid JSON with these exact keys:
-
-{{
-  "match_score": number between 0 and 100,
-  "shortlisted": true or false,
-  "reasoning": "clear 2-3 sentence explanation",
-  "key_strengths": ["list", "of", "strengths"],
-  "key_gaps": ["list", "of", "gaps"]
-}}
-
-Be honest. Only shortlist if score >= 40.
-"""
-
-STRUCTURE_TUNED_PROMPT = """
-You are an expert resume writer.
-
-Below is a candidate's tuned resume data (produced by an AI tuner) and their original profile details.
-Convert everything into this EXACT structured JSON format.
-Return ONLY valid JSON — no markdown fences, no extra text.
-
-Original profile details (do NOT change name, email, linkedin, education, company names, titles, dates):
-{original_details}
-
-AI-tuned resume content:
-{tuned_content}
-
-Required output structure:
-{{
-  "candidate_profile_details": {{
-    "name": "Full Name",
-    "email": "email@example.com",
-    "linkedin_id": "linkedin URL or empty string"
+  "gap_analysis": "Precise explanation of why the current score is {before_score} and what specific JD requirements are unmet.",
+  "skills_to_add": {{
+    "Frameworks": ["every JD-required framework missing from resume"],
+    "Cloud & DevOps": ["every JD-required cloud/devops tool missing"],
+    "Other Skills": ["every JD-required skill/methodology missing"]
   }},
-  "profile_summary": [
-    "Tuned achievement-focused bullet 1",
-    "Tuned bullet 2",
-    "... (6-10 bullets from the tuned summary)"
+  "summary_sentences_to_add": [
+    "Targeted sentence 1 using exact JD terminology mapped to candidate's real background.",
+    "Targeted sentence 2 addressing the most important JD requirement not in current summary.",
+    "Targeted sentence 3 if needed — up to 3 sentences maximum."
   ],
-  "skills": {{
-    "Programming Languages": ["..."],
-    "Frameworks": ["..."],
-    "Web Technologies": ["..."],
-    "Databases": ["..."],
-    "Cloud & DevOps": ["..."],
-    "Version Control": ["..."],
-    "Other Skills": ["..."]
-  }},
-  "education": "Degree, Institution, City – Month Year",
-  "work_experience": [
+  "experience_additions": [
     {{
-      "client_name": "Same company name as original",
-      "client_location": "City, Country",
-      "Candidate_designation": "Same job title as original or Nan",
-      "time_frame": "Month/Year (same as original)",
-      "project_description": "One-line description of the role",
-      "responsibilities": [
-        "Tuned responsibility bullet 1",
-        "Tuned responsibility bullet 2",
-        "... (4-6 bullets from tuned experience)"
-      ],
-      "environment": "Tech stack comma separated"
+      "target_entry_index": 0,
+      "target_description": "employer – client (time_frame) for human reference",
+      "bullets_to_add": [
+        "Bullet using exact JD keyword/tool mapped to what this role actually did.",
+        "Another bullet for a different JD gap applicable to this role.",
+        "Up to 3 bullets per entry if there are enough genuine gaps."
+      ]
     }}
   ]
 }}
 
-Rules:
-- Only include skill categories that have actual values.
-- List work_experience in reverse chronological order.
-- If a field value is unknown, use empty string "".
+━━━ RULES ━━━
+1. skills_to_add: Add ALL skills explicitly listed in the JD that are absent from the resume.
+   Use the same category keys already in the formatted resume. No invented skills.
+
+2. summary_sentences_to_add: Up to 3 sentences. Must use exact JD language and map to the
+   candidate's real experience. Do not invent experience.
+
+3. experience_additions: Add bullets to EVERY work entry where the JD gap is plausibly relevant.
+   Up to 3 bullets per entry. Use exact JD keywords. Base bullets on what the candidate
+   actually did — rephrase to surface JD-relevant aspects of their existing work.
+
+4. If a JD requirement has ZERO basis in the candidate's background, list it in gap_analysis only.
+
+5. You MUST produce enough additions to realistically close the {score_gap}-point gap.
+   Be thorough — scan every line of the JD for keywords, tools, methodologies, and phrases
+   that are not already in the resume.
 """
 
-tune_prompt_template = ChatPromptTemplate.from_template(TUNE_PROMPT)
+# ── Prompt 2: Re-score the merged resume ─────────────────────────────────────
+
+RESCORE_PROMPT = """
+You are an expert IT ATS specialist with 15+ years of recruiting experience.
+
+This candidate was previously scored {before_score}/100 against this job.
+Their resume has now been optimised with the following ATS improvements:
+{improvements_summary}
+
+Your task: score the OPTIMISED resume below against the job. Focus on:
+- Keyword match: how many JD-required skills/tools now appear in the resume
+- Depth of alignment: do the experience bullets reflect JD responsibilities
+- Overall ATS fit improvement from the additions made
+
+Job Details:
+{job_details}
+
+Optimised Candidate Resume:
+{resume_text}
+
+Return ONLY valid JSON:
+{{
+  "match_score": <number 0–100>,
+  "shortlisted": <true or false>,
+  "reasoning": "2–3 sentences explaining the score, explicitly mentioning improvements over the previous {before_score} score.",
+  "key_strengths": ["strength 1", "strength 2"],
+  "key_gaps": ["remaining gap 1", "remaining gap 2"]
+}}
+
+Score honestly but give full credit for the ATS keyword additions made.
+Only shortlist if score >= 40.
+"""
+
+gap_prompt_template = ChatPromptTemplate.from_template(GAP_ANALYSIS_PROMPT)
 rescore_prompt_template = ChatPromptTemplate.from_template(RESCORE_PROMPT)
-structure_tuned_prompt_template = ChatPromptTemplate.from_template(STRUCTURE_TUNED_PROMPT)
 
 
 def _parse_llm_json(content: str) -> dict:
@@ -141,26 +139,146 @@ def _parse_llm_json(content: str) -> dict:
     return json.loads(content)
 
 
+def _merge_additions(formatted_resume: dict, additions: dict) -> dict:
+    """
+    Merge JD-gap additions onto the formatted resume.
+    This is pure Python — no LLM. The original content is never touched.
+    Only appends to existing lists/dicts.
+    """
+    tuned = copy.deepcopy(formatted_resume)
+
+    # ── Skills ──
+    skills_to_add: dict = additions.get("skills_to_add", {})
+    if isinstance(skills_to_add, dict):
+        existing_skills = tuned.setdefault("skills", {})
+        # Collect all existing skill strings (lowercase) for dedup
+        all_existing = {
+            s.strip().lower()
+            for sl in existing_skills.values()
+            for s in (sl if isinstance(sl, list) else [])
+        }
+        for category, new_items in skills_to_add.items():
+            if not isinstance(new_items, list):
+                continue
+            target_list = existing_skills.setdefault(category, [])
+            for skill in new_items:
+                if skill.strip().lower() not in all_existing:
+                    target_list.append(skill)
+                    all_existing.add(skill.strip().lower())
+    elif isinstance(skills_to_add, list):
+        # Fallback: if LLM returned a flat list, append to Other Skills
+        existing_skills = tuned.setdefault("skills", {})
+        all_existing = {
+            s.strip().lower()
+            for sl in existing_skills.values()
+            for s in (sl if isinstance(sl, list) else [])
+        }
+        other = existing_skills.setdefault("Other Skills", [])
+        for skill in skills_to_add:
+            if skill.strip().lower() not in all_existing:
+                other.append(skill)
+                all_existing.add(skill.strip().lower())
+
+    # ── Professional summary ──
+    sentences: List[str] = additions.get("summary_sentences_to_add", [])
+    if sentences:
+        summary = tuned.setdefault("profile_summary", [])
+        existing_lower = {s.strip().lower() for s in summary}
+        for sentence in sentences:
+            if sentence.strip().lower() not in existing_lower:
+                summary.append(sentence)
+
+    # ── Experience bullets ──
+    work_exp = tuned.get("work_experience", [])
+    for exp_add in additions.get("experience_additions", []):
+        idx = exp_add.get("target_entry_index")
+        bullets: List[str] = exp_add.get("bullets_to_add", [])
+        if idx is None or not isinstance(idx, int):
+            continue
+        if 0 <= idx < len(work_exp):
+            existing_resps = work_exp[idx].setdefault("responsibilities", [])
+            existing_lower = {r.strip().lower() for r in existing_resps}
+            for bullet in bullets:
+                if bullet.strip().lower() not in existing_lower:
+                    existing_resps.append(bullet)
+
+    return tuned
+
+
+def _build_resume_text(resume: dict, meta: dict) -> str:
+    """Convert the merged structured resume to plain text for re-scoring."""
+    profile = resume.get("candidate_profile_details", {})
+    name = profile.get("name", meta.get("name", ""))
+    location = meta.get("location", "")
+    email = profile.get("email", meta.get("email", ""))
+
+    summary_bullets = "\n".join(f"  - {b}" for b in resume.get("profile_summary", []))
+
+    flat_skills = ", ".join(
+        s
+        for sl in resume.get("skills", {}).values()
+        for s in (sl if isinstance(sl, list) else [])
+    )
+
+    exp_lines = []
+    for exp in resume.get("work_experience", []):
+        employer = exp.get("employer_name", "")
+        client = exp.get("client_name", "")
+        company_str = f"{employer}" + (f" / Client: {client}" if client else "")
+        title = exp.get("Candidate_designation", "")
+        timeframe = exp.get("time_frame", "")
+        exp_lines.append(f"  {title} at {company_str} ({timeframe})")
+        for b in exp.get("responsibilities", []):
+            exp_lines.append(f"    - {b}")
+
+    education = resume.get("education", "")
+
+    return f"""
+Name: {name}
+Location: {location}
+Email: {email}
+
+Professional Summary:
+{summary_bullets}
+
+Skills: {flat_skills}
+
+Experience:
+{chr(10).join(exp_lines)}
+
+Education: {education}
+""".strip()
+
+
 async def tune_shortlisted_resumes(state: Dict[str, Any]) -> Dict[str, Any]:
     """
-    Node 3b: For each shortlisted candidate in the current job,
-    tune their resume against the JD, then re-score it.
-    Returns tuned_candidates list with before/after scores.
+    Node: For each shortlisted candidate in the current job:
+      1. Load their formatted resume from state (output of format_shortlisted_resumes).
+      2. Run gap analysis against the JD → get additions only.
+      3. Merge additions onto formatted resume in Python (additive, never removes anything).
+      4. Validate the merged result.
+      5. Re-score against the JD.
+      6. Upload to S3 and save to MongoDB.
     """
-
     structured_jd = state.get("structured_jd")
     current_job_id = state.get("current_job_id")
 
     if not structured_jd or not current_job_id:
         return {"tuned_candidates": []}
 
-    # Only process shortlisted candidates for the CURRENT job
     all_shortlisted = state.get("shortlisted_candidates", [])
     current_shortlisted = [c for c in all_shortlisted if c.get("job_id") == current_job_id]
 
     if not current_shortlisted:
         print("   No shortlisted candidates for this job — skipping tuning.")
         return {"tuned_candidates": []}
+
+    # Build lookup: candidate_id → formatted_resume dict
+    formatted_lookup: Dict[str, dict] = {
+        r["candidate_id"]: r["formatted_resume"]
+        for r in state.get("formatted_resume_data", [])
+        if r.get("job_id") == current_job_id and r.get("formatted_resume")
+    }
 
     print(f"\n✏️  Tuning {len(current_shortlisted)} shortlisted resume(s) for: {structured_jd.get('job_title')}")
 
@@ -179,106 +297,113 @@ async def tune_shortlisted_resumes(state: Dict[str, Any]) -> Dict[str, Any]:
     tuned_candidates = []
 
     for candidate in current_shortlisted:
+        from bson import ObjectId
+
         candidate_id = candidate["candidate_id"]
         name = candidate["candidate_name"]
         before_score = candidate["match_score"]
 
         print(f"\n   [{name}] Before score: {before_score}")
 
-        # Fetch full resume document from MongoDB
-        from bson import ObjectId
-        resume_doc = await resume_collection_name.find_one({"_id": ObjectId(candidate_id)})
+        # ── Fetch metadata from DB (email, location, certifications) ──
+        resume_doc = await bench_resume_collection.find_one({"_id": ObjectId(candidate_id)})
         if not resume_doc:
-            print(f"   WARNING: Resume not found for {name}, skipping.")
+            print(f"   WARNING: Resume doc not found for {name} — skipping.")
             continue
 
-        original_resume = json.dumps({
-            "name": resume_doc.get("name"),
-            "summary": resume_doc.get("summary", ""),
-            "skills": resume_doc.get("skills", []),
-            "experience": resume_doc.get("experience", []),
-            "education": resume_doc.get("education", []),
+        meta = {
+            "name": resume_doc.get("name", name),
+            "email": resume_doc.get("email", ""),
+            "location": resume_doc.get("location", resume_doc.get("address", "")),
             "certifications": resume_doc.get("certifications", []),
-        }, ensure_ascii=False)
+            "education": resume_doc.get("education", []),
+        }
 
-        # ---- STEP 1: Tune the resume ----
-        try:
-            tune_chain = tune_prompt_template | llm
-            tune_response = await tune_chain.ainvoke({
-                "job_details": job_summary,
-                "original_resume": original_resume,
-            })
-            tuned = _parse_llm_json(tune_response.content)
-        except Exception as e:
-            print(f"   ERROR tuning {name}: {e}")
+        # ── Get formatted resume as base ──
+        formatted_resume = formatted_lookup.get(candidate_id)
+        if not formatted_resume:
+            print(f"   WARNING: No formatted resume found for {name} — skipping tuning.")
             continue
 
-        improvements = tuned.get("improvements_made", [])
-        print(f"   [{name}] Tuning done. Improvements: {len(improvements)}")
+        # ── Step 1: Gap analysis → additions ──
+        target_score = min(before_score + 15, 95)
+        score_gap = target_score - before_score
+        try:
+            gap_chain = gap_prompt_template | llm
+            gap_response = await gap_chain.ainvoke({
+                "job_details": job_summary,
+                "formatted_resume": json.dumps(formatted_resume, ensure_ascii=False),
+                "before_score": before_score,
+                "target_score": target_score,
+                "score_gap": score_gap,
+            })
+            additions = _parse_llm_json(gap_response.content)
+        except Exception as e:
+            print(f"   ERROR during gap analysis for {name}: {e}")
+            continue
 
-        # ---- STEP 2: Re-score the tuned resume ----
-        # Build tuned resume text (keep education/location from original)
-        tuned_resume_text = f"""
-Name: {resume_doc.get('name')}
-Location: {resume_doc.get('location', resume_doc.get('address', ''))}
-Email: {resume_doc.get('email', '')}
+        gap_summary = additions.get("gap_analysis", "")
+        skills_added = additions.get("skills_to_add", {})
+        print(f"   [{name}] Gap analysis done. Skills to add: {skills_added}")
 
-Summary: {tuned.get('summary', '')}
+        # ── Step 2: Python merge (additive only) ──
+        tuned_resume = _merge_additions(formatted_resume, additions)
 
-Skills: {json.dumps(tuned.get('skills', []))}
+        # ── Step 3: Validate ──
+        is_valid, errors = validate_tuned_resume(tuned_resume, formatted_resume)
+        if not is_valid:
+            print(f"   [{name}] WARNING: Tuned resume validation issues:")
+            for err in errors:
+                print(f"      • {err}")
 
-Experience:
-{chr(10).join(
-    f"  {exp.get('title')} at {exp.get('company')} ({exp.get('dates', '')})" +
-    chr(10) + chr(10).join(f"    - {b}" for b in exp.get('bullets', []))
-    for exp in tuned.get('experience', [])
-)}
+        # ── Build improvements list BEFORE re-score so we can pass it as context ──
+        improvements_made = []
+        if isinstance(skills_added, dict):
+            for cat, items in skills_added.items():
+                if isinstance(items, list):
+                    improvements_made.extend([f"Added to {cat}: {s}" for s in items])
+        elif isinstance(skills_added, list):
+            improvements_made = [f"Added skill: {s}" for s in skills_added]
+        sentences_added = additions.get("summary_sentences_to_add", [])
+        if sentences_added:
+            improvements_made.append(f"Added {len(sentences_added)} sentence(s) to professional summary")
+        exp_adds = additions.get("experience_additions", [])
+        if exp_adds:
+            total_bullets = sum(len(e.get("bullets_to_add", [])) for e in exp_adds)
+            improvements_made.append(
+                f"Added {total_bullets} experience bullet(s) across {len(exp_adds)} work entry(ies)"
+            )
 
-Education: {json.dumps(resume_doc.get('education', []))}
-Certifications: {json.dumps(resume_doc.get('certifications', []))}
-        """.strip()
-
+        # ── Step 4: Re-score ──
+        tuned_resume_text = _build_resume_text(tuned_resume, meta)
+        after_score = before_score
+        rescored = {}
+        improvements_summary = "\n".join(f"- {i}" for i in improvements_made) or "General keyword optimisation"
         try:
             rescore_chain = rescore_prompt_template | llm
             rescore_response = await rescore_chain.ainvoke({
                 "job_details": job_summary,
                 "resume_text": tuned_resume_text,
+                "before_score": before_score,
+                "improvements_summary": improvements_summary,
             })
             rescored = _parse_llm_json(rescore_response.content)
             after_score = rescored.get("match_score", before_score)
         except Exception as e:
             print(f"   ERROR re-scoring {name}: {e}")
-            after_score = before_score
-            rescored = {}
 
         print(f"   [{name}] After score: {after_score} (gain: +{after_score - before_score})")
 
-        # ---- STEP 3: Convert tuned content to structured format and upload to S3 ----
+        # ── Step 5: Upload to S3 ──
         tuned_s3_uri = None
         tuned_presigned_url = None
-        structured_tuned_resume = {}
         try:
-            original_details = json.dumps({
-                "name": resume_doc.get("name"),
-                "email": resume_doc.get("email", ""),
-                "linkedin": resume_doc.get("linkedin", resume_doc.get("linkedin_id", "")),
-                "education": resume_doc.get("education", []),
-                "location": resume_doc.get("location", resume_doc.get("address", "")),
-            }, ensure_ascii=False)
-
-            structure_chain = structure_tuned_prompt_template | llm
-            structure_response = await structure_chain.ainvoke({
-                "original_details": original_details,
-                "tuned_content": json.dumps(tuned, ensure_ascii=False),
-            })
-            structured_tuned_resume = _parse_llm_json(structure_response.content)
-
             s3_key = tuned_s3_key(current_job_id, name)
-            tuned_s3_uri = upload_resume_json(structured_tuned_resume, s3_key)
+            tuned_s3_uri = upload_resume_json(tuned_resume, s3_key)
             tuned_presigned_url = generate_presigned_url(s3_key) if tuned_s3_uri else None
-            print(f"   [{name}] Tuned structured resume uploaded → {tuned_s3_uri}")
+            print(f"   [{name}] Tuned resume uploaded → {tuned_s3_uri}")
         except Exception as e:
-            print(f"   WARNING: Could not structure/upload tuned resume for {name}: {e}")
+            print(f"   WARNING: S3 upload failed for tuned resume ({name}): {e}")
 
         tuned_record = {
             "job_id": current_job_id,
@@ -286,19 +411,19 @@ Certifications: {json.dumps(resume_doc.get('certifications', []))}
             "posted_date": structured_jd.get("posted_date", ""),
             "candidate_id": candidate_id,
             "candidate_name": name,
-            "candidate_email": candidate.get("candidate_email", ""),
+            "candidate_email": candidate.get("candidate_email", meta.get("email", "")),
             "before_score": before_score,
             "after_score": after_score,
             "score_gain": after_score - before_score,
-            "improvements_made": improvements,
-            # Keep structured data in-memory for email rendering
+            "gap_analysis": gap_summary,
+            "improvements_made": improvements_made,
             "tuned_resume": {
-                "summary": tuned.get("summary", ""),
-                "skills": tuned.get("skills", []),
-                "experience": tuned.get("experience", []),
-                "education": resume_doc.get("education", []),
-                "certifications": resume_doc.get("certifications", []),
-                "location": resume_doc.get("location", resume_doc.get("address", "")),
+                "summary": tuned_resume.get("profile_summary", []),
+                "skills": tuned_resume.get("skills", {}),
+                "experience": tuned_resume.get("work_experience", []),
+                "education": meta["education"],
+                "certifications": meta["certifications"],
+                "location": meta["location"],
             },
             "tuned_resume_text": tuned_resume_text,
             "before_reasoning": candidate.get("reasoning", ""),
@@ -306,25 +431,25 @@ Certifications: {json.dumps(resume_doc.get('certifications', []))}
             "after_strengths": rescored.get("key_strengths", []),
             "after_gaps": rescored.get("key_gaps", []),
             "evaluated_at": state.get("timestamp"),
-            # S3 links for the structured tuned resume
             "tuned_s3_uri": tuned_s3_uri,
             "tuned_presigned_url": tuned_presigned_url,
-            "structured_tuned_resume": structured_tuned_resume,
+            "structured_tuned_resume": tuned_resume,
         }
 
         tuned_candidates.append(tuned_record)
 
-        # Save to MongoDB — store tuned resume as full text string, not structured dict
+        # ── Persist to MongoDB ──
         await tuned_resumes_collection.insert_one({
             "job_id": current_job_id,
             "job_title": structured_jd.get("job_title", ""),
             "candidate_id": candidate_id,
             "candidate_name": name,
-            "candidate_email": candidate.get("candidate_email", ""),
+            "candidate_email": candidate.get("candidate_email", meta.get("email", "")),
             "before_score": before_score,
             "after_score": after_score,
             "score_gain": after_score - before_score,
-            "improvements_made": improvements,
+            "gap_analysis": gap_summary,
+            "improvements_made": improvements_made,
             "tuned_resume_text": tuned_resume_text,
             "before_reasoning": candidate.get("reasoning", ""),
             "after_reasoning": rescored.get("reasoning", ""),

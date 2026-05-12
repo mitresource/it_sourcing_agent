@@ -1,0 +1,156 @@
+2026-04-24 10:20:29,111 [INFO] Starting autonomous recruitment process...
+2026-04-24 10:20:44,355 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:20:53,461 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:20:53,489 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-24 10:22:49,177 [INFO] Starting autonomous recruitment process...
+2026-04-24 10:22:57,582 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:23:05,505 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:23:05,534 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-24 10:28:13,792 [INFO] Starting autonomous recruitment process...
+2026-04-24 10:28:21,490 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:28:33,072 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:28:33,111 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-24 10:28:45,335 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:28:50,905 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:29:03,632 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:29:09,460 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:29:12,651 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:29:22,356 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:29:34,293 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:29:36,978 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:29:49,420 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:29:53,469 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:30:04,602 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:30:17,796 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:30:20,748 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:30:33,756 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:30:37,055 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:30:49,343 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:31:03,378 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:31:06,313 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:31:23,206 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:31:28,345 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:31:36,498 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:31:52,337 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:31:55,376 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:32:16,423 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:32:20,958 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:32:29,994 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:32:42,539 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:32:45,285 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:33:00,806 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:33:04,426 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:33:14,507 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:33:25,407 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:33:28,274 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:33:42,644 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:33:46,860 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:33:57,874 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:34:08,892 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:34:12,335 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:34:24,726 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:34:29,155 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:34:38,943 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:34:54,714 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:34:57,835 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:35:14,938 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 10:35:16,153 [INFO] ========== RUN COMPLETED ==========
+2026-04-24 10:35:16,154 [INFO] Run ID: 58ec7cf6-b933-448a-bb0b-7ac4801defe9
+2026-04-24 10:35:16,154 [INFO] Total Jobs Found: 10
+2026-04-24 10:35:16,154 [INFO] Jobs Processed: 10
+2026-04-24 10:35:16,154 [INFO] Processed Job IDs: ['69e9aee977c6451028c610c7', '69e9aec877c6451028c610c6', '69e9aeaa77c6451028c610c5', '69e9ae8577c6451028c610c4', '69e9ae6d77c6451028c610c3', '69e9ae4d77c6451028c610c2', '69e9ae3277c6451028c610c1', '69e9ae1277c6451028c610c0', '69e9adf577c6451028c610bf', '69e9add677c6451028c610be']
+2026-04-24 10:35:16,154 [INFO] Total: 10 candidate evaluations across all jobs, 9 shortlisted
+2026-04-24 10:35:16,155 [INFO] Results saved to: agent_resume_results/
+2026-04-24 10:35:16,155 [INFO] Email notification: SENT
+2026-04-24 14:06:15,498 [INFO] Starting autonomous recruitment process...
+2026-04-24 14:06:24,498 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:06:36,174 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:06:36,234 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-24 14:06:47,448 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:06:51,022 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:07:03,817 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:07:08,833 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:07:11,966 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:07:20,518 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:07:32,201 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:07:35,341 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:07:50,209 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:07:51,649 [INFO] ========== RUN COMPLETED ==========
+2026-04-24 14:07:51,650 [INFO] Run ID: c32c7672-d1b1-435e-8cda-7f98a6477f73
+2026-04-24 14:07:51,650 [INFO] Total Jobs Found: 3
+2026-04-24 14:07:51,650 [INFO] Jobs Processed: 3
+2026-04-24 14:07:51,650 [INFO] Processed Job IDs: ['69e9aee977c6451028c610c7', '69e9aec877c6451028c610c6', '69e9aeaa77c6451028c610c5']
+2026-04-24 14:07:51,650 [INFO] Total: 3 candidate evaluations across all jobs, 2 shortlisted
+2026-04-24 14:07:51,653 [INFO] Results saved to: agent_resume_results/
+2026-04-24 14:07:51,653 [INFO] Email notification: SENT
+2026-04-24 14:11:48,251 [INFO] Starting autonomous recruitment process...
+2026-04-24 14:11:57,610 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:12:05,165 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:12:05,190 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-24 14:12:20,572 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:12:24,028 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:12:42,144 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:12:45,540 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:12:54,348 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:13:06,525 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:13:09,907 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:13:26,241 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:13:31,204 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:13:41,962 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:13:52,178 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:13:55,782 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:14:10,987 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 14:14:12,476 [INFO] ========== RUN COMPLETED ==========
+2026-04-24 14:14:12,476 [INFO] Run ID: ecc3f9dc-c5f8-4b88-bcab-bf330d046a39
+2026-04-24 14:14:12,476 [INFO] Total Jobs Found: 3
+2026-04-24 14:14:12,476 [INFO] Jobs Processed: 3
+2026-04-24 14:14:12,476 [INFO] Processed Job IDs: ['69e9ae8577c6451028c610c4', '69e9ae6d77c6451028c610c3', '69e9ae4d77c6451028c610c2']
+2026-04-24 14:14:12,476 [INFO] Total: 3 candidate evaluations across all jobs, 3 shortlisted
+2026-04-24 14:14:12,476 [INFO] Results saved to: agent_resume_results/
+2026-04-24 14:14:12,478 [INFO] Email notification: SENT
+2026-04-24 15:02:26,409 [INFO] Starting autonomous recruitment process...
+2026-04-24 15:02:36,364 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:02:47,010 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:02:47,030 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-24 15:02:56,998 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:02:59,810 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:03:12,917 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:03:16,939 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:03:19,919 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:03:28,789 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:03:38,111 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:03:40,597 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:03:52,600 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:03:54,779 [INFO] ========== RUN COMPLETED ==========
+2026-04-24 15:03:54,779 [INFO] Run ID: 576e1b05-2ad0-4c30-9ee3-53e59d279ba2
+2026-04-24 15:03:54,781 [INFO] Total Jobs Found: 3
+2026-04-24 15:03:54,781 [INFO] Jobs Processed: 3
+2026-04-24 15:03:54,781 [INFO] Processed Job IDs: ['69e9aee977c6451028c610c7', '69e9aec877c6451028c610c6', '69e9aeaa77c6451028c610c5']
+2026-04-24 15:03:54,781 [INFO] Total: 3 candidate evaluations across all jobs, 2 shortlisted
+2026-04-24 15:03:54,782 [INFO] Results saved to: agent_resume_results/
+2026-04-24 15:03:54,782 [INFO] Email notification: SENT
+2026-04-24 15:12:37,523 [INFO] Starting autonomous recruitment process...
+2026-04-24 15:12:47,445 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:12:57,782 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:12:57,797 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-04-24 15:13:07,765 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:13:14,524 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:13:27,109 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:13:31,009 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:13:41,560 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:13:53,947 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:13:57,190 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:14:09,309 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:14:14,096 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:14:29,890 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:14:39,007 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:14:42,179 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:14:54,858 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-24 15:14:56,270 [INFO] ========== RUN COMPLETED ==========
+2026-04-24 15:14:56,270 [INFO] Run ID: 2b114364-f01e-409b-8f95-52b2cc7c4dcd
+2026-04-24 15:14:56,270 [INFO] Total Jobs Found: 3
+2026-04-24 15:14:56,270 [INFO] Jobs Processed: 3
+2026-04-24 15:14:56,270 [INFO] Processed Job IDs: ['69e9ae8577c6451028c610c4', '69e9ae6d77c6451028c610c3', '69e9ae4d77c6451028c610c2']
+2026-04-24 15:14:56,270 [INFO] Total: 3 candidate evaluations across all jobs, 3 shortlisted
+2026-04-24 15:14:56,272 [INFO] Results saved to: agent_resume_results/
+2026-04-24 15:14:56,272 [INFO] Email notification: SENT

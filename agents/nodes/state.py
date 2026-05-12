@@ -23,6 +23,12 @@ class RecruitmentState(TypedDict):
     tuned_candidates: Annotated[List[Dict[str, Any]], operator.add]
     summary: Optional[str]
 
+    # docx output paths and their S3 URLs
+    rendered_docx_paths: Annotated[List[str], operator.add]
+    formatted_docx_urls: Annotated[List[Dict[str, Any]], operator.add]
+    tuned_docx_urls: Annotated[List[Dict[str, Any]], operator.add]
+    job_data_urls: Annotated[List[Dict[str, Any]], operator.add]
+
     # tracking
     processed_jobs: Annotated[List[str], operator.add]
     errors: Annotated[List[str], operator.add]

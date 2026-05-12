@@ -3,19 +3,19 @@
   "candidate_id": "681b20d36ddf8c2fb1a15a6a",
   "match_score": 25,
   "shortlisted": false,
-  "reasoning": "The candidate has a strong technical background in full stack development but lacks relevant experience and skills in marketing, event planning, and communication, which are crucial for the Marketing Consultant Internship role. Their focus on development does not align with the responsibilities outlined in the job description.",
+  "reasoning": "The candidate's background is primarily in full stack development, which does not align with the marketing and event planning focus of the internship. While they possess strong technical skills, they lack relevant experience in marketing, communication, and event execution, which are critical for this role.",
   "key_strengths": [
     "Strong technical skills in web development",
     "Experience in application development",
     "Good educational background in Computer Science"
   ],
   "key_gaps": [
-    "Lack of marketing and branding experience",
-    "No experience in event planning or execution",
-    "Limited communication and public speaking skills"
+    "No experience in marketing or branding",
+    "Lack of communication and public speaking skills",
+    "No relevant event planning experience"
   ],
   "job_title": "Marketing Consultant Internship",
   "company": "My captain",
   "job_id": "69dcd22e70297a2739b366b1",
-  "evaluated_at": "2026-04-16T16:36:29.028352"
+  "evaluated_at": "2026-04-20T10:00:46.619441"
 }

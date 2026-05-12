@@ -3,8 +3,8 @@ import os
 import boto3
 from botocore.exceptions import ClientError
 
-S3_BUCKET = os.environ.get("S3_BUCKET_NAME", "it-sourcing-agent-resumes")
-S3_REGION = os.environ.get("AWS_REGION", "ap-south-1")
+S3_BUCKET = "bench-candidates"
+S3_REGION = "ap-south-1"
 
 
 def _s3():
@@ -42,9 +42,13 @@ def generate_presigned_url(s3_key: str, expiry_seconds: int = 604800) -> str | N
 
 def formatted_s3_key(job_id: str, candidate_name: str) -> str:
     safe = candidate_name.replace(" ", "_")
-    return f"resumes/formatted/{job_id}/{safe}_formatted.json"
+    return f"formatted_resume/{job_id}/{safe}_formatted.json"
 
 
 def tuned_s3_key(job_id: str, candidate_name: str) -> str:
     safe = candidate_name.replace(" ", "_")
-    return f"resumes/tuned/{job_id}/{safe}_tuned.json"
+    return f"tuned_resume/{job_id}/{safe}_tuned.json"
+
+
+def job_data_s3_key(job_id: str) -> str:
+    return f"dice_jobs/{job_id}/job_data.json"

@@ -3,7 +3,7 @@ import sys
 sys.path.append("..")
 import json
 
-from agents.db import resume_collection_name, evaluation_collection
+from agents.db import bench_resume_collection, bench_candidate_evaluation
 from .state import RecruitmentState
 
 
@@ -34,7 +34,7 @@ Return ONLY valid JSON with these exact keys:
   "key_gaps": ["list", "of", "gaps"]
 }}
 
-Be honest and strict. Only shortlist if the candidate is genuinely strong (score >=40).
+Be honest and strict. Only shortlist if the candidate is genuinely strong (score >=50).
 """
 
 from langchain_core.prompts import ChatPromptTemplate
@@ -49,14 +49,19 @@ async def evaluate_candidate_matches(state: Dict[str, Any]) -> Dict[str, Any]:
         print("⚠️ No job data to match against.")
         return state
 
-    # Get ALL bench candidates (you can change limit later)
-    cursor = resume_collection_name.find({"is_bench": "yes"}).limit(30)  # safety limit for now
-    all_candidates = await cursor.to_list(length=50)
+    cursor = bench_resume_collection.find({
+        "is_bench": "yes",
+    })
+    all_candidates = await cursor.to_list(length=None)
 
-    print(f"🔥 Starting full matching for {len(all_candidates)} bench candidates...")
+    if not all_candidates:
+        print("⚠️ No bench resume found (is_bench: yes) — skipping evaluation.")
+        return {"evaluations": [], "shortlisted_candidates": []}
+
+    print(f"🔥 Starting full matching for today's candidate: {all_candidates[0].get('name', 'Unknown')}...")
 
     evaluations = []
-    shortlisted = []
+    shortlisted_list = []
 
     job_summary = json.dumps({
         "title": structured_jd.get("job_title"),
@@ -75,11 +80,27 @@ async def evaluate_candidate_matches(state: Dict[str, Any]) -> Dict[str, Any]:
         name = candidate.get("name", "Unknown")
         email = candidate.get("email", "")
 
-        # Convert full resume to readable text
+        # Flatten skills — bench_candidates_resume stores skills as a nested dict
+        raw_skills = candidate.get("skills", {})
+        if isinstance(raw_skills, dict):
+            flat_skills = (
+                raw_skills.get("primary_skills", []) +
+                raw_skills.get("secondary_skills", []) +
+                raw_skills.get("cloud_devops", []) +
+                raw_skills.get("databases", []) +
+                raw_skills.get("tools", [])
+            )
+        else:
+            flat_skills = raw_skills if isinstance(raw_skills, list) else []
+
         resume_text = f"""
 Name: {candidate.get('name')}
+Location: {candidate.get('location', '')}
+Visa Status: {candidate.get('visa_status', '')}
+Total Experience: {candidate.get('total_experience_years', 0)} years
+Current Title: {candidate.get('current_title', '')}
 Summary: {candidate.get('summary', '')}
-Skills: {json.dumps(candidate.get('skills', []))}
+Skills: {json.dumps(flat_skills)}
 Experience: {json.dumps(candidate.get('experience', []))}
 Education: {json.dumps(candidate.get('education', []))}
 Certifications: {json.dumps(candidate.get('certifications', []))}
@@ -101,28 +122,35 @@ Certifications: {json.dumps(candidate.get('certifications', []))}
 
             result = json.loads(content)
 
+            match_score = result.get("match_score", 0)
+            shortlisted = match_score >= 50
+
             eval_record = {
                 "job_id": state["current_job_id"],
                 "job_title": structured_jd.get("job_title", ""),
                 "posted_date": structured_jd.get("posted_date", ""),
+                "job_url": structured_jd.get("job_url", ""),
                 "candidate_id": candidate_id,
                 "resume_id": candidate_id,
                 "candidate_name": name,
                 "candidate_email": email,
-                "match_score": result.get("match_score", 0),
-                "shortlisted": result.get("shortlisted", False),
+                "match_score": match_score,
+                "shortlisted": shortlisted,
                 "reasoning": result.get("reasoning", ""),
                 "key_strengths": result.get("key_strengths", []),
                 "key_gaps": result.get("key_gaps", []),
                 "evaluated_at": state.get("timestamp"),
+                "original_resume_s3_url": candidate.get("resume_url", ""),
+                "formatted_shortlisted_resume_s3_url": "",
+                "tuned_formatted_shortlisted_resume_s3_url": "",
             }
 
             evaluations.append(eval_record)
 
-            if result.get("shortlisted"):
-                shortlisted.append(eval_record)
+            if shortlisted:
+                shortlisted_list.append(eval_record)
 
-            print(f"   ✓ {name} → Score: {result.get('match_score')} | Shortlisted: {result.get('shortlisted')}")
+            print(f"   ✓ {name} → Score: {match_score} | Shortlisted: {shortlisted}")
 
         except Exception as e:
             print(f"   ✗ Error evaluating {name}: {e}")
@@ -130,13 +158,13 @@ Certifications: {json.dumps(candidate.get('certifications', []))}
 
     # Save evaluations to database
     if evaluations:
-        await evaluation_collection.insert_many(evaluations)
+        await bench_candidate_evaluation.insert_many(evaluations)
 
-    print(f"\n🎯 Matching completed! Shortlisted: {len(shortlisted)} candidates")
+    print(f"\n🎯 Matching completed! Shortlisted: {len(shortlisted_list)} candidates")
 
     return {
         "evaluations": evaluations,
-        "shortlisted_candidates": shortlisted,
+        "shortlisted_candidates": shortlisted_list,
     }
 
 

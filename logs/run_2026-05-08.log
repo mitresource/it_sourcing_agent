@@ -1,0 +1,195 @@
+2026-05-08 17:05:41,682 [INFO] Starting autonomous recruitment process...
+2026-05-08 17:05:47,166 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-05-08 17:05:52,560 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:02,490 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:16,097 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:19,317 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:25,346 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:30,782 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:41,137 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:48,577 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:51,415 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:06:59,979 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:07:11,209 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:07:18,237 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:07:21,582 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:07:27,024 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:07:37,382 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:07:44,236 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:07:46,174 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:07:51,624 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:00,657 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:06,859 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:09,418 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:16,873 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:25,917 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:33,780 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:35,348 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:41,214 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:49,473 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:56,134 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:58,475 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 17:08:59,979 [INFO] Email cache saved to C:\Users\MIT\us_it_agents\it_sourcing_agent\last_run_email_cache.json
+2026-05-08 17:09:01,642 [INFO] Email sent to jagadiahjagu@gmail.com
+2026-05-08 17:09:01,645 [INFO] ========== RUN COMPLETED ==========
+2026-05-08 17:09:01,645 [INFO] Run ID: 96460ea4-4a5d-41e1-9d2f-542fd55e2040
+2026-05-08 17:09:01,645 [INFO] Total Jobs Found: 8
+2026-05-08 17:09:01,646 [INFO] Jobs Processed: 8
+2026-05-08 17:09:01,646 [INFO] Processed Job IDs: ['69fdca2bd60931830fa05e55', '69fdca0ed60931830fa05e54', '69fdc9f5d60931830fa05e53', '69fdc9d8d60931830fa05e52', '69fdc9b4d60931830fa05e51', '69fdc98fd60931830fa05e50', '69fdc970d60931830fa05e4f', '69fdc94cd60931830fa05e4e']
+2026-05-08 17:09:01,646 [INFO] Total: 8 candidate evaluations across all jobs, 7 shortlisted
+2026-05-08 17:09:01,646 [INFO] Results saved to: agent_resume_results/
+2026-05-08 17:09:01,646 [INFO] Email notification: SENT
+2026-05-08 18:03:10,275 [INFO] Starting autonomous recruitment process...
+2026-05-08 18:03:20,093 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-05-08 18:03:29,051 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:03:55,347 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:04:02,303 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:04:05,804 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:04:16,637 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:04:25,875 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:04:54,012 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:05:00,245 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:05:03,838 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:05:14,846 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:05:20,284 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:05:47,113 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:05:52,877 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:05:56,342 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:06:05,542 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:09:32,254 [INFO] Retrying request to /chat/completions in 0.419383 seconds
+2026-05-08 18:09:32,701 [INFO] Retrying request to /chat/completions in 0.904570 seconds
+2026-05-08 18:10:03,998 [ERROR] Error during recruitment process: ac-tfd97ae-shard-00-01.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-tfd97ae-shard-00-00.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-tfd97ae-shard-00-02.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 69fdd805e49a015caa78d6ee, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-tfd97ae-shard-00-00.cwibfnc.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-tfd97ae-shard-00-00.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-tfd97ae-shard-00-01.cwibfnc.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-tfd97ae-shard-00-01.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-tfd97ae-shard-00-02.cwibfnc.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-tfd97ae-shard-00-02.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+Traceback (most recent call last):
+  File "C:\Users\MIT\us_it_agents\it_sourcing_agent\runner.py", line 43, in run_daily_recruitment_process
+    result = await recruitment_app.ainvoke(initial_state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\langgraph\pregel\main.py", line 3479, in ainvoke
+    async for chunk in self.astream(
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\langgraph\pregel\main.py", line 3128, in astream
+    async for _ in runner.atick(
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\langgraph\pregel\_runner.py", line 304, in atick
+    await arun_with_retry(
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\langgraph\pregel\_retry.py", line 242, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\langgraph\_internal\_runnable.py", line 705, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\langgraph\_internal\_runnable.py", line 473, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\it_sourcing_agent\agents\nodes\tune_resume.py", line 309, in tune_shortlisted_resumes
+    resume_doc = await bench_resume_collection.find_one({"_id": ObjectId(candidate_id)})
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\AppData\Local\Programs\Python\Python311\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\collection.py", line 1755, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1289, in __next__
+    return self.next()
+           ^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1265, in next
+    if len(self._data) or self._refresh():
+                          ^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1213, in _refresh
+    self._send_message(q)
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\cursor.py", line 1108, in _send_message
+    response = client._run_operation(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1938, in _run_operation
+    return self._retryable_read(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2048, in _retryable_read
+    return self._retry_internal(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\_csot.py", line 125, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2014, in _retry_internal
+    ).run()
+      ^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2763, in run
+    return self._read() if self._is_read else self._write()
+           ^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2908, in _read
+    self._server = self._get_server()
+                   ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 2856, in _get_server
+    return self._client._select_server(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\mongo_client.py", line 1833, in _select_server
+    server = topology.select_server(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\topology.py", line 428, in select_server
+    server = self._select_server(
+             ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\topology.py", line 402, in _select_server
+    servers = self.select_servers(
+              ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\topology.py", line 298, in select_servers
+    server_descriptions = self._select_servers_loop(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MIT\us_it_agents\itagentsenv\Lib\site-packages\pymongo\synchronous\topology.py", line 359, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: ac-tfd97ae-shard-00-01.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-tfd97ae-shard-00-00.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),ac-tfd97ae-shard-00-02.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 69fdd805e49a015caa78d6ee, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-tfd97ae-shard-00-00.cwibfnc.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-tfd97ae-shard-00-00.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-tfd97ae-shard-00-01.cwibfnc.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-tfd97ae-shard-00-01.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-tfd97ae-shard-00-02.cwibfnc.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('ac-tfd97ae-shard-00-02.cwibfnc.mongodb.net:27017: [Errno 11001] getaddrinfo failed (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+During task with name 'tune_shortlisted_resumes' and id '20a2c964-5572-2041-5cad-ab8bce6f56f1'
+2026-05-08 18:26:52,428 [INFO] Starting autonomous recruitment process...
+2026-05-08 18:26:57,847 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-05-08 18:27:03,110 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:27:27,359 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:27:33,897 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:27:36,160 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:27:41,694 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:28:01,717 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:28:09,133 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:28:12,007 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:28:17,128 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:28:35,972 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:28:42,186 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:28:45,073 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:28:51,226 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:29:13,515 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:29:22,893 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:29:27,996 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:29:35,048 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:29:55,437 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:30:11,629 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:30:16,220 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:30:22,265 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:31:02,104 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:31:12,440 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:31:15,609 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:31:30,562 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:32:08,297 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:32:15,935 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:32:19,542 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:32:30,136 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:32:57,591 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:33:10,964 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:33:13,694 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:33:23,007 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:34:00,198 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:34:06,442 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:34:12,276 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:34:25,135 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:35:01,013 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:35:09,029 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:35:11,847 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:35:18,242 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:35:59,575 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:36:15,674 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:36:20,307 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-08 18:36:22,196 [INFO] Email cache saved to C:\Users\MIT\us_it_agents\it_sourcing_agent\last_run_email_cache.json
+2026-05-08 18:36:23,847 [INFO] Email sent to jagadiahjagu@gmail.com
+2026-05-08 18:36:23,847 [INFO] ========== RUN COMPLETED ==========
+2026-05-08 18:36:23,847 [INFO] Run ID: 67a660be-4037-4f86-9404-3637a3273e29
+2026-05-08 18:36:23,855 [INFO] Total Jobs Found: 11
+2026-05-08 18:36:23,855 [INFO] Jobs Processed: 11
+2026-05-08 18:36:23,855 [INFO] Processed Job IDs: ['69fdd5c077f3f499b0c10bc0', '69fdd59e77f3f499b0c10bbf', '69fdd57e77f3f499b0c10bbe', '69fdd55877f3f499b0c10bbd', '69fdd53377f3f499b0c10bbc', '69fdd51077f3f499b0c10bbb', '69fdd4ec77f3f499b0c10bba', '69fdd4b077f3f499b0c10bb8', '69fdd48c77f3f499b0c10bb7', '69fdd47277f3f499b0c10bb6', '69fdd45577f3f499b0c10bb5']
+2026-05-08 18:36:23,855 [INFO] Total: 11 candidate evaluations across all jobs, 11 shortlisted
+2026-05-08 18:36:23,855 [INFO] Results saved to: agent_resume_results/
+2026-05-08 18:36:23,855 [INFO] Email notification: SENT

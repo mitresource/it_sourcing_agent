@@ -1,0 +1,7 @@
+Collecting reportlab
+  Downloading reportlab-4.4.10-py3-none-any.whl (2.0 MB)
+     ---------------------------------------- 2.0/2.0 MB 24.6 MB/s eta 0:00:00
+Requirement already satisfied: pillow>=9.0.0 in c:\users\mit\us_it_agents\itagentsenv\lib\site-packages (from reportlab) (12.2.0)
+Requirement already satisfied: charset-normalizer in c:\users\mit\us_it_agents\itagentsenv\lib\site-packages (from reportlab) (3.4.7)
+Installing collected packages: reportlab
+Successfully installed reportlab-4.4.10

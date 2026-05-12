@@ -1,0 +1,53 @@
+2026-05-06 18:44:33,532 [INFO] Starting autonomous recruitment process...
+2026-05-06 18:44:36,499 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-05-06 18:44:44,056 [INFO] Email sent to jagadiahjagu@gmail.com, raju.kaguturi@mitresource.com, yaseen@mitresource.com, rajkumar@mitresource.com
+2026-05-06 18:44:44,056 [INFO] ========== RUN COMPLETED ==========
+2026-05-06 18:44:44,056 [INFO] Run ID: ffb41fde-3c65-4327-9757-99268fab58a5
+2026-05-06 18:44:44,056 [INFO] Total Jobs Found: 19
+2026-05-06 18:44:44,056 [INFO] Jobs Processed: 19
+2026-05-06 18:44:44,056 [INFO] Processed Job IDs: ['69fb392b11583329ca18df72', '69fb390e11583329ca18df71', '69fb38ef11583329ca18df70', '69fb38d011583329ca18df6f', '69fb38b311583329ca18df6e', '69fb386a11583329ca18df6d', '69fb384111583329ca18df6c', '69fb382611583329ca18df6b', '69fb37fc11583329ca18df6a', '69fb37db11583329ca18df69', '69fb37b311583329ca18df68', '69fb379611583329ca18df67', '69fb377711583329ca18df66', '69fb375711583329ca18df65', '69fb373611583329ca18df64', '69fb371211583329ca18df63', '69fb36e211583329ca18df62', '69fb36c711583329ca18df61', '69fb36af11583329ca18df60']
+2026-05-06 18:44:44,056 [INFO] Total: 0 candidate evaluations across all jobs, 0 shortlisted
+2026-05-06 18:44:44,056 [INFO] Results saved to: agent_resume_results/
+2026-05-06 18:44:44,056 [INFO] Email notification: SENT
+2026-05-06 18:48:26,442 [INFO] Starting autonomous recruitment process...
+2026-05-06 18:48:29,248 [INFO] Found credentials in shared credentials file: ~/.aws/credentials
+2026-05-06 18:48:35,816 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:48:42,534 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:48:52,879 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:04,071 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:10,007 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:16,358 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:23,315 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:27,306 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:31,332 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:36,020 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:40,530 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:49:52,199 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:00,797 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:03,360 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:07,625 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:11,246 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:16,268 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:19,336 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:23,234 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:26,431 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:30,000 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:34,238 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:47,193 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:56,376 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:50:59,375 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:51:05,353 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:51:18,625 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:51:29,837 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:51:32,350 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:51:36,758 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:51:40,825 [INFO] HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-06 18:51:42,490 [INFO] Email sent to jagadiahjagu@gmail.com, raju.kaguturi@mitresource.com, yaseen@mitresource.com, rajkumar@mitresource.com
+2026-05-06 18:51:42,496 [INFO] ========== RUN COMPLETED ==========
+2026-05-06 18:51:42,496 [INFO] Run ID: 3fb75d50-e85b-4cda-aa8f-e964b7445916
+2026-05-06 18:51:42,496 [INFO] Total Jobs Found: 19
+2026-05-06 18:51:42,496 [INFO] Jobs Processed: 19
+2026-05-06 18:51:42,496 [INFO] Processed Job IDs: ['69fb392b11583329ca18df72', '69fb390e11583329ca18df71', '69fb38ef11583329ca18df70', '69fb38d011583329ca18df6f', '69fb38b311583329ca18df6e', '69fb386a11583329ca18df6d', '69fb384111583329ca18df6c', '69fb382611583329ca18df6b', '69fb37fc11583329ca18df6a', '69fb37db11583329ca18df69', '69fb37b311583329ca18df68', '69fb379611583329ca18df67', '69fb377711583329ca18df66', '69fb375711583329ca18df65', '69fb373611583329ca18df64', '69fb371211583329ca18df63', '69fb36e211583329ca18df62', '69fb36c711583329ca18df61', '69fb36af11583329ca18df60']
+2026-05-06 18:51:42,496 [INFO] Total: 19 candidate evaluations across all jobs, 4 shortlisted
+2026-05-06 18:51:42,496 [INFO] Results saved to: agent_resume_results/
+2026-05-06 18:51:42,496 [INFO] Email notification: SENT

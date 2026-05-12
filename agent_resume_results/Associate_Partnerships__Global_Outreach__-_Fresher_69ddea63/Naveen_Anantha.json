@@ -3,19 +3,19 @@
   "candidate_id": "681b20d36ddf8c2fb1a15a6a",
   "match_score": 35,
   "shortlisted": false,
-  "reasoning": "While Naveen has a solid educational background and technical skills in development, the role of Associate Partnerships requires strong communication, sales, and client relationship management skills, which are not evident in his resume. Additionally, the candidate's experience is primarily in technical roles, making him less suitable for a position focused on business development and outreach.",
+  "reasoning": "While Naveen has a solid technical background in full stack development, the role of Associate Partnerships requires skills in business development, client relationship management, and effective communication, which are not evident in his resume. His experience is primarily technical, and he lacks the necessary skills and experience in sales and outreach that are critical for this position.",
   "key_strengths": [
-    "Strong educational background in Computer Science",
-    "Proficient in frontend and backend development",
-    "Experience with real-time projects"
+    "Strong technical skills in full stack development",
+    "Experience with real-time projects",
+    "Good educational background in Computer Science"
   ],
   "key_gaps": [
-    "Lack of experience in sales or business development",
-    "No demonstrated skills in client relationship management or effective communication",
-    "Limited relevant experience for a partnerships role"
+    "Lack of experience in business development",
+    "No demonstrated skills in client relationship management",
+    "Insufficient experience in sales or outreach strategies"
   ],
   "job_title": "Associate Partnerships (Global Outreach) - Fresher",
   "company": "Zetexa Global Private Limited",
   "job_id": "69ddea63beeb18af9b92d405",
-  "evaluated_at": "2026-04-16T16:36:29.028352"
+  "evaluated_at": "2026-04-20T10:00:46.619441"
 }
